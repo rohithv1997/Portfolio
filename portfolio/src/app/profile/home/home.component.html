@@ -11,15 +11,34 @@
       <button mat-lis color="primary" mat-button routerLink="/">Home</button>
     </mat-toolbar>
     <mat-nav-list>
-      <li>
+      <ul>
         <button color="primary" mat-button routerLink="/about">About</button>
-      </li>
-      <button color="primary" mat-button routerLink="/projects">
-        Projects
-      </button>
-      <br />
-      <button color="primary" mat-button routerLink="/contact">Contact</button>
-      <br />
+      </ul>
+      <ul>
+        <button color="primary" mat-button routerLink="/experience">
+          Experience
+        </button>
+      </ul>
+      <ul>
+        <button color="primary" mat-button routerLink="/projects">
+          Projects
+        </button>
+      </ul>
+      <ul>
+        <button color="primary" mat-button routerLink="/skills">
+          Skills
+        </button>
+      </ul>
+      <ul>
+        <button color="primary" mat-button routerLink="/education">
+          Education
+        </button>
+      </ul>
+      <ul>
+        <button color="primary" mat-button routerLink="/contact">
+          Contact
+        </button>
+      </ul>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -36,5 +55,6 @@
       <app-header></app-header>
     </mat-toolbar>
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
