@@ -6,7 +6,6 @@ import { AboutDTO } from '../dto/about-dto';
 import { EducationDTO } from '../dto/education-dto';
 import { ExperienceDTO } from '../dto/experience-dto';
 import { FooterDTO } from '../dto/footer-dto';
-import { HeaderDTO } from '../dto/header-dto';
 import { IntroDTO } from '../dto/intro-dto';
 import { ProjectDTO } from '../dto/project-dto';
 import { SkillsDTO } from '../dto/skills-dto';
@@ -16,10 +15,6 @@ import { SkillsDTO } from '../dto/skills-dto';
 })
 export class ApiService {
   constructor(private httpClient: HttpClient) {}
-
-  public getHeader(): Observable<HeaderDTO> {
-    return this.httpClient.get<HeaderDTO>(environment.apiUrlHeaderGet);
-  }
 
   public getIntro(): Observable<IntroDTO> {
     return this.httpClient.get<IntroDTO>(environment.apiUrlIntroGet);

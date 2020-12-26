@@ -9,3 +9,5 @@ Refer : https://medium.com/@saikiran1298/how-to-host-an-angular-app-to-github-pa
 * git commit 
 
 * git push -u origin main 
+
+* hosted at https://rohithv1997.github.io/Portfolio

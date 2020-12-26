@@ -1,45 +1,26 @@
 {
-    "imageBackGroundUrl": "/assets/image/devandreacarratta-header.jpg",
-    "imageProfileUrl": "/assets/image/andrea-carratta.jpg",
-    "fullName": "Andrea Carratta",
-    "shortDescription": "Do you like my job? Support me!",
-    "buttons":
-    [{
-            "description": "@PayPal",
-            "linkUrl": "https://www.paypal.com/biz/fund?id=BBPH5VRLM56BG"
-        }, {
-            "description": "@CoinBase",
-            "linkUrl": "https://www.coinbase.com/join/carrat_42"
-        }, {
-            "description": "@revolut",
-            "linkUrl": "http://pay.revolut.com/profile/andrea3mbg"
-        }, {
-            "description": "@buymeacoffee",
-            "linkUrl": "https://www.buymeacoffee.com/andreacarratta"
-        }
-    ],
-    "socials":
-    [{
-            "socialId": "facebook",
-            "profileUrl": "https://www.facebook.com/....",
-            "followMeText": ""
-        }, {
-            "socialId": "instagram",
-            "profileUrl": "https://www.instagram.com/....",
-            "followMeText": ""
-        }, {
-            "socialId": "linkedin",
-            "profileUrl": "https://www.linkedin.com/in/acarratta/",
-            "followMeText": ""
-        }, {
-            "socialId": "github",
-            "profileUrl": "https://github.com/devandreacarratta/",
-            "followMeText": ""
-        }, {
-            "socialId": "twitter",
-            "profileUrl": "https://twitter.com/dev_acarratta",
-            "followMeText": ""
-        }
-
-    ]
+  "imageProfileUrl": "https://lh3.googleusercontent.com/sWb1RkLPkhMmxkb6rB4Sr-dSR_JSQob5Vv9yOJpmMmyajj-WLGgHIQebFWS4loutIvDq-RE_UZok11z_rQb6pvYYn3PGI0WZ0ptQSM5besnkEwHb6FVSPHDshXJXrkUSZju4i7wOX6maWSJYnG8fIwyppMRJJCL16golT5tW6St42QRvNowO76gvGXS9hU8Re27VIDtLFmGrWXtWH5RzdhFWck9_MTsdYwvbwERAN5YT039U1YYN0fdnhgzVH4zeypnoYJwMGYgzzjzpDCbI_h5DJO22JWPQnx6iBLa5_U5lc86-OhF_oTEZR3xdbpkjHiM4l2Qr_eI-zM25m1twC7wS3dwuTl44ieEIquaqu_QNeFWOmos2_RMl6mg-JEVPze7VOFA-39wyfQ6XInE0SSTt1Vvb4VL9cDpWVSjkSmWVlVmHl9NsrqEyiadm-96kSZD6J3GtpCjv4j-IuOacVA29-pSc5lV47DNEnK240wqxoIdlcQWCemV681NVqdAnZ0T_-B0SOW_iRBVgUXvHUjTq_NkRrqQoSYvH9zxvy8XOBm0YNf1OrEiUa18sr6efXUdJB5t9bVnzwn4UvTC8ueAKSMZtk-7zDH9c2YvQPm4u1wm_RouloqvoGMdhlyjmYrMF_lkpdRKGyrJKFoNjPEBtb21TlFREy3GmMzLHSYnTaGN4tZ0QKkZD8o3D=s240-no?authuser=0",
+  "fullName": "Rohith V",
+  "buttons": [
+    {
+      "description": "@HackerRank",
+      "linkUrl": "https://www.hackerrank.com/Rohith_Venkat"
+    },
+    {
+      "description": "Resume",
+      "linkUrl": "https://drive.google.com/file/d/14Gr9kzreY5KIRyY7SEgSEnbVoV8meYFi/view?usp=sharing"
+    }
+  ],
+  "socials": [
+    {
+      "socialId": "linkedin",
+      "profileUrl": "https://www.linkedin.com/in/acarratta/",
+      "followMeText": ""
+    },
+    {
+      "socialId": "github",
+      "profileUrl": "https://github.com/devandreacarratta/",
+      "followMeText": ""
+    }
+  ]
 }

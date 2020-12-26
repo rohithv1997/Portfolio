@@ -1,0 +1,9 @@
+.intro-card {
+  max-width: 1000px;
+}
+
+.intro-image {
+  background-size: cover;
+  width: 304px;
+  height: 236px;
+}
