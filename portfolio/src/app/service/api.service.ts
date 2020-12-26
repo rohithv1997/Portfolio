@@ -16,10 +16,6 @@ import { SkillsDTO } from '../dto/skills-dto';
 export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
-  public getIntro(): Observable<IntroDTO> {
-    return this.httpClient.get<IntroDTO>(environment.apiUrlIntroGet);
-  }
-
   public getAbout(): Observable<AboutDTO> {
     return this.httpClient.get<AboutDTO>(environment.apiUrlAboutGet);
   }

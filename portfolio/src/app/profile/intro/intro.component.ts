@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { IntroDTO } from 'src/app/dto/intro-dto';
-import { ApiService } from 'src/app/service/api.service';
+import { Subscription } from 'rxjs';
+import { Store } from '@ngrx/store';
+import * as fromApp from '../../store/IAppState';
 
 @Component({
   selector: 'app-intro',
@@ -9,13 +11,17 @@ import { ApiService } from 'src/app/service/api.service';
 })
 export class IntroComponent implements OnInit, OnDestroy {
   public data!: IntroDTO;
-  constructor(private apiService: ApiService) {}
+  private subscription!: Subscription;
+
+  constructor(private store: Store<fromApp.IAppState>) {}
 
   ngOnInit(): void {
-    this.apiService.getIntro().subscribe((intro) => {
-      this.data = intro;
+    this.subscription = this.store.select('intro').subscribe((introState) => {
+      this.data = introState.introDto;
     });
   }
 
-  ngOnDestroy(): void {}
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
 }

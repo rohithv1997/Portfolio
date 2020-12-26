@@ -3,7 +3,6 @@ import { HeaderDTO } from 'src/app/dto/header-dto';
 import { Subscription } from 'rxjs';
 import { Store } from '@ngrx/store';
 import * as fromApp from '../../store/IAppState';
-import { OnStartupService } from 'src/app/service/on-startup.service';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +12,7 @@ import { OnStartupService } from 'src/app/service/on-startup.service';
 export class HeaderComponent implements OnInit, OnDestroy {
   public data!: HeaderDTO;
   private subscription!: Subscription;
+
   constructor(private store: Store<fromApp.IAppState>) {}
 
   ngOnInit(): void {
