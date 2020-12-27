@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ng-portfolio-host": {
+      "hosting": {
+        "portfolio": [
+          "ng-portfolio-host"
+        ]
+      }
+    }
+  }
+}
