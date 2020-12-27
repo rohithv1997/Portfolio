@@ -7,33 +7,16 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar>
-      <button mat-lis color="primary" mat-button routerLink="/intro">Home</button>
-    </mat-toolbar>
     <mat-nav-list>
-      <ul>
-        <button color="primary" mat-button routerLink="/about">About</button>
-      </ul>
-      <ul>
-        <button color="primary" mat-button routerLink="/experience">
-          Experience
-        </button>
-      </ul>
-      <ul>
-        <button color="primary" mat-button routerLink="/projects">
-          Projects
-        </button>
-      </ul>
-      <ul>
-        <button color="primary" mat-button routerLink="/skills">
-          Skills
-        </button>
-      </ul>
-      <ul>
-        <button color="primary" mat-button routerLink="/education">
-          Education
-        </button>
-      </ul>
+      <mat-list-item
+        *ngFor="let button of data"
+        mat-button
+        color="accent"
+        routerLink="/{{ button }}"
+      >
+        {{ button }}
+        <!-- </button> -->
+      </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

@@ -8,46 +8,48 @@ import { NotFoundComponent } from './profile/not-found/not-found.component';
 import { ProjectsComponent } from './profile/projects/projects.component';
 import { SkillsComponent } from './profile/skills/skills.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/intro',
+    redirectTo: '/Intro',
     pathMatch: 'full',
   },
   {
-    path: 'about',
+    path: 'Intro',
+    component: IntroComponent,
+  },
+  {
+    path: 'About',
     component: AboutComponent,
   },
   {
-    path: 'experience',
+    path: 'Experience',
     component: ExperienceComponent,
   },
   {
-    path: 'projects',
+    path: 'Projects',
     component: ProjectsComponent,
   },
   {
-    path: 'skills',
+    path: 'Skills',
     component: SkillsComponent,
   },
   {
-    path: 'education',
+    path: 'Education',
     component: EducationComponent,
   },
   {
     path: 'not-found',
     component: NotFoundComponent,
   },
-  {
-    path: 'intro',
-    component: IntroComponent
-  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabled'
-})],
+  imports: [
+    RouterModule.forRoot(routes, {
+      initialNavigation: 'enabled',
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

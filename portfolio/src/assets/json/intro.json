@@ -1,22 +1,14 @@
 {
-  "imageProfileUrl": "/assets/images/PP-Rohith.png",
   "fullName": "Rohith V",
+  "shortDescription": "Full Stack Developer",
   "buttons": [
     {
-      "description": "@HackerRank",
-      "linkUrl": "https://www.hackerrank.com/Rohith_Venkat"
-    }
-  ],
-  "socials": [
-    {
-      "socialId": "linkedin",
-      "profileUrl": "https://www.linkedin.com/in/acarratta/",
-      "followMeText": ""
+      "linkId": "github",
+      "linkUrl": "https://github.com/rohithv1997"
     },
     {
-      "socialId": "github",
-      "profileUrl": "https://github.com/devandreacarratta/",
-      "followMeText": ""
+      "linkId": "linkedin",
+      "linkUrl": "https://www.linkedin.com/in/rohith-venkat/"
     }
   ]
 }

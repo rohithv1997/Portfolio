@@ -1,5 +1,5 @@
 
 export class ButtonDTO {
-    public description!: string;
+    public linkId!: string;
     public linkUrl!: string;
 }
