@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { GetHeaderDto } from '../store/Header/Actions/GetHeaderDto';
 import * as fromApp from '../store/IAppState';
+import { GetHeaderDto } from '../store/Header/Actions/GetHeaderDto';
 import { GetIntroDto } from '../store/Intro/Actions/GetIntroDto';
+import { GetAboutDto } from '../store/About/Actions/GetAboutDto';
 
 @Injectable({
   providedIn: 'root',
@@ -13,5 +14,6 @@ export class OnStartupService {
   public onStartUp(): void {
     this.store.dispatch(new GetHeaderDto());
     this.store.dispatch(new GetIntroDto());
+    this.store.dispatch(new GetAboutDto());
   }
 }

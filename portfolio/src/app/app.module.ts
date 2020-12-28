@@ -8,6 +8,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
+
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,7 +31,6 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import * as fromApp from './store/app.reducer';
 import * as fromAppEffects from './store/app.Effects';
-
 
 @NgModule({
   declarations: [
@@ -56,11 +57,12 @@ import * as fromAppEffects from './store/app.Effects';
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatTabsModule,
     HttpClientModule,
     StoreModule.forRoot(fromApp.appReducer),
     EffectsModule.forRoot(fromAppEffects.appEffects),
-    StoreDevtoolsModule.instrument({logOnly: true}),
-    StoreRouterConnectingModule.forRoot()
+    StoreDevtoolsModule.instrument({ logOnly: true }),
+    StoreRouterConnectingModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,7 +1,4 @@
 export class AboutDTO {
-  public aboutTitle!: string;
-  public aboutDescriptionLines!: string[];
-  public basicInformationTitle!: string;
   public dateOfBirthTitle!: string;
   public dateOfBirthValue!: string;
   public emailTitle!: string;
