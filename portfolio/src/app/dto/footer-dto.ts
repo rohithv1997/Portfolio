@@ -1,3 +1,6 @@
-export class FooterDTO {
-    public copyrighttext!: string;
+import { IDto } from './IDto';
+
+export class FooterDTO implements IDto {
+  public licenseText!: string;
+  public licenseLink!: string;
 }

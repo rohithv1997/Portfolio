@@ -1,0 +1,14 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding-left: 10px;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: lightgray;
+}

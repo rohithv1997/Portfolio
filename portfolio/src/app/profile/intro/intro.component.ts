@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { IntroDTO } from 'src/app/dto/intro-dto';
 import { Subscription } from 'rxjs';
 import { Store } from '@ngrx/store';
-import * as fromApp from '../../store/IAppState';
+import * as fromApp from '../../store/Base/IApp.State';
 
 @Component({
   selector: 'app-intro',
@@ -16,7 +16,7 @@ export class IntroComponent implements OnInit, OnDestroy {
   constructor(private store: Store<fromApp.IAppState>) {}
 
   ngOnInit(): void {
-    this.subscription = this.store.select('intro').subscribe((introState) => {
+    this.subscription = this.store.select('introState').subscribe((introState) => {
       this.data = introState.introDto;
     });
   }

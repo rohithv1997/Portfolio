@@ -1,7 +1,7 @@
 import { CompanyExperienceDTO } from './company-experience-dto';
+import { IDto } from './IDto';
 
-export class ExperienceDTO {
-    public experienceTitle!: string;
-    public jobs!: CompanyExperienceDTO[];
+export class ExperienceDTO implements IDto {
+  public experienceTitle!: string;
+  public jobs!: CompanyExperienceDTO[];
 }
-

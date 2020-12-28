@@ -1,4 +1,6 @@
-export class AboutDTO {
+import { IDto } from "./IDto";
+
+export class AboutDTO implements IDto {
   public dateOfBirthTitle!: string;
   public dateOfBirthValue!: string;
   public emailTitle!: string;

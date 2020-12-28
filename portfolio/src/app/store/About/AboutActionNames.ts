@@ -1,5 +1,5 @@
 export enum AboutActionNames {
   None,
-  GET_ABOUTDTO = '[About]GET_ABOUTDTO',
-  SET_ABOUTDTO = '[About]SET_ABOUTDTO',
+  GET_ABOUT = '[About]GET_ABOUT',
+  SET_ABOUT = '[About]SET_ABOUT',
 }

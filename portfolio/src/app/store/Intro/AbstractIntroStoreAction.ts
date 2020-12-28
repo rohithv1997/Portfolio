@@ -1,4 +1,4 @@
-import { AbstractStoreAction } from '../AbstractStoreAction';
+import { AbstractAppStoreAction } from '../Base/AbstractApp.StoreAction';
 import { IIntroState } from './IIntro.State';
 
-export abstract class AbstractIntroStoreAction extends AbstractStoreAction<IIntroState> {}
+export abstract class AbstractIntroStoreAction extends AbstractAppStoreAction<IIntroState> {}

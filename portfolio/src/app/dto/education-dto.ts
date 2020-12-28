@@ -1,7 +1,7 @@
+import { IDto } from './IDto';
 import { SchoolEducationDTO } from './school-education-dto';
 
-export class EducationDTO {
-    public educationTitle!: string;
-    public schools!: SchoolEducationDTO[];
+export class EducationDTO implements IDto {
+  public educationTitle!: string;
+  public schools!: SchoolEducationDTO[];
 }
-

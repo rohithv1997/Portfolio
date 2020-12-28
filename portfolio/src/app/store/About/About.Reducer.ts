@@ -1,27 +1,23 @@
-import { Action, ActionReducer } from '@ngrx/store';
 import { AboutDTO } from 'src/app/dto/about-dto';
 import { AboutActionNames } from './AboutActionNames';
-import { AbstractAboutStoreAction } from './AbstractAboutStoreAction';
+import { AbstractAboutStoreAction } from './AbstractAbout.StoreAction';
 import { IAboutState } from './IAbout.State';
 
-const initialState: IAboutState = {
-  aboutDto: new AboutDTO(),
-};
+export class AboutReducer {
+  private static initialState: IAboutState = {
+    aboutDto: new AboutDTO(),
+  };
 
-export const aboutReducerMap: ActionReducer<IAboutState, Action> = (
-  state,
-  action
-) => aboutReducer(state, action as AbstractAboutStoreAction);
-
-export function aboutReducer(
-  state = initialState,
-  action: AbstractAboutStoreAction
-): IAboutState {
-  switch (action.type) {
-    case AboutActionNames.GET_ABOUTDTO:
-    case AboutActionNames.SET_ABOUTDTO:
-      return action.execute(state);
-    default:
-      return state;
+  public execute(
+    state = AboutReducer.initialState,
+    action: AbstractAboutStoreAction
+  ): IAboutState {
+    switch (action.type) {
+      case AboutActionNames.GET_ABOUT:
+      case AboutActionNames.SET_ABOUT:
+        return action.execute(state);
+      default:
+        return state;
+    }
   }
 }

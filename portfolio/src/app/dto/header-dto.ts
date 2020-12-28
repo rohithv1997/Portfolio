@@ -1,3 +1,5 @@
-export class HeaderDTO {
-    public siteTitle!: string;
+import { IDto } from './IDto';
+
+export class HeaderDTO implements IDto {
+  public siteTitle!: string;
 }

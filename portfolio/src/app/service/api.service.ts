@@ -2,9 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { AboutDTO } from '../dto/about-dto';
 import { EducationDTO } from '../dto/education-dto';
 import { ExperienceDTO } from '../dto/experience-dto';
 import { FooterDTO } from '../dto/footer-dto';
+import { HeaderDTO } from '../dto/header-dto';
+import { IDto } from '../dto/IDto';
+import { IntroDTO } from '../dto/intro-dto';
 import { ProjectDTO } from '../dto/project-dto';
 import { SkillsDTO } from '../dto/skills-dto';
 
@@ -14,23 +18,34 @@ import { SkillsDTO } from '../dto/skills-dto';
 export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
-  public getExperience(): Observable<ExperienceDTO> {
+  get Header(): Observable<HeaderDTO> {
+    return this.httpClient.get<HeaderDTO>(environment.apiUrlHeaderGet);
+  }
+
+  get Intro(): Observable<IntroDTO> {
+    return this.httpClient.get<IntroDTO>(environment.apiUrlIntroGet);
+  }
+
+  get About(): Observable<AboutDTO> {
+    return this.httpClient.get<AboutDTO>(environment.apiUrlAboutGet);
+  }
+  get Experience(): Observable<ExperienceDTO> {
     return this.httpClient.get<ExperienceDTO>(environment.apiUrlExperienceGet);
   }
 
-  public getSkill(): Observable<SkillsDTO> {
+  get Skill(): Observable<SkillsDTO> {
     return this.httpClient.get<SkillsDTO>(environment.apiUrlSkillGet);
   }
 
-  public getFooter(): Observable<FooterDTO> {
+  get Footer(): Observable<FooterDTO> {
     return this.httpClient.get<FooterDTO>(environment.apiUrlFooterGet);
   }
 
-  public getEducation(): Observable<EducationDTO> {
+  get Education(): Observable<EducationDTO> {
     return this.httpClient.get<EducationDTO>(environment.apiUrlEducationGet);
   }
 
-  public getProject(): Observable<ProjectDTO> {
+  get Project(): Observable<ProjectDTO> {
     return this.httpClient.get<ProjectDTO>(environment.apiUrlProjectGet);
   }
 }

@@ -1,9 +1,9 @@
 import { AboutActionNames } from '../AboutActionNames';
-import { AbstractAboutStoreAction } from '../AbstractAboutStoreAction';
+import { AbstractAboutStoreAction } from '../AbstractAbout.StoreAction';
 import { IAboutState } from '../IAbout.State';
 
-export class GetAboutDto extends AbstractAboutStoreAction {
-  readonly type = AboutActionNames.GET_ABOUTDTO;
+export class GetAboutAction extends AbstractAboutStoreAction {
+  readonly type = AboutActionNames.GET_ABOUT;
 
   constructor() {
     super();
