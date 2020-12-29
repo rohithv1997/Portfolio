@@ -1,5 +1,5 @@
 import { AboutDTO } from 'src/app/dto/about-dto';
-import { IState } from '../Base/IState';
+import { IState } from '../IState';
 
 export interface IAboutState extends IState {
   aboutDto: AboutDTO

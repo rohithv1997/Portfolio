@@ -1,20 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Actions, Effect, ofType } from '@ngrx/effects';
+import { Actions, Effect } from '@ngrx/effects';
 import { Observable } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators';
 import { FooterDTO } from 'src/app/dto/footer-dto';
 import { ApiService } from 'src/app/service/api.service';
-import { AbstractAppEffect } from '../../Base/AbstractApp.Effect';
+import { AbstractFooterEffect } from '../AbstractFooter.Effect';
 import { SetFooterAction } from '../Actions/SetFooter.Action';
 import { FooterActionNames } from '../FooterActionNames';
-import { IFooterState } from '../IFooter.State';
 
 @Injectable()
-export class GetFooterEffect extends AbstractAppEffect<
-  IFooterState,
-  FooterDTO,
-  SetFooterAction
-> {
+export class GetFooterEffect extends AbstractFooterEffect<SetFooterAction> {
   protected switchMapCallback(): Observable<FooterDTO> {
     return this.apiService.Footer;
   }

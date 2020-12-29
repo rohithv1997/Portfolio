@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HeaderDTO } from 'src/app/dto/header-dto';
 import { Subscription } from 'rxjs';
 import { Store } from '@ngrx/store';
-import * as fromApp from '../../store/Base/IApp.State';
+import * as fromApp from '../../store/IApp.State';
 
 @Component({
   selector: 'app-header',

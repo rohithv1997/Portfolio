@@ -3,17 +3,12 @@ import { Actions, Effect } from '@ngrx/effects';
 import { Observable } from 'rxjs';
 import { AboutDTO } from 'src/app/dto/about-dto';
 import { ApiService } from 'src/app/service/api.service';
-import { AbstractAppEffect } from '../../Base/AbstractApp.Effect';
 import { AboutActionNames } from '../AboutActionNames';
+import { AbstractAboutEffect } from '../AbstractAbout.Effect';
 import { SetAboutAction } from '../Actions/SetAbout.Action';
-import { IAboutState } from '../IAbout.State';
 
 @Injectable()
-export class GetAboutEffect extends AbstractAppEffect<
-  IAboutState,
-  AboutDTO,
-  SetAboutAction
-> {
+export class GetAboutEffect extends AbstractAboutEffect<SetAboutAction> {
   constructor(actions$: Actions, private apiService: ApiService) {
     super(AboutActionNames.GET_ABOUT, actions$);
   }

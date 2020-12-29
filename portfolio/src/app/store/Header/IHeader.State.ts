@@ -1,5 +1,5 @@
 import { HeaderDTO } from 'src/app/dto/header-dto';
-import { IState } from '../Base/IState';
+import { IState } from '../IState';
 
 export interface IHeaderState extends IState {
   headerDto : HeaderDTO

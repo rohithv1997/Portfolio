@@ -1,5 +1,5 @@
 import { FooterDTO } from 'src/app/dto/footer-dto';
-import { AbstractFooterStoreAction } from '../AbstractFooterStoreAction';
+import { AbstractFooterStoreAction } from '../AbstractFooter.StoreAction';
 import { FooterActionNames } from '../FooterActionNames';
 import { IFooterState } from '../IFooter.State';
 

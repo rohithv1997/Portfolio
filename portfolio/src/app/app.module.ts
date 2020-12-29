@@ -9,7 +9,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MatGridListModule } from '@angular/material/grid-list';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -30,8 +29,8 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
-import * as fromApp from './store/Base/App.ActionReducer.Registry';
-import * as fromAppEffects from './store/Base/App.Effects.Registry';
+import * as fromApp from './store/App.ActionReducer.Registry';
+import * as fromAppEffects from './store/App.Effects.Registry';
 
 @NgModule({
   declarations: [
@@ -59,7 +58,6 @@ import * as fromAppEffects from './store/Base/App.Effects.Registry';
     MatListModule,
     MatCardModule,
     MatTabsModule,
-    MatGridListModule,
     HttpClientModule,
     StoreModule.forRoot(fromApp.appActionReducerRegistry),
     EffectsModule.forRoot(fromAppEffects.appEffectsRegistry),

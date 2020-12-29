@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { IntroDTO } from 'src/app/dto/intro-dto';
 import { Subscription } from 'rxjs';
 import { Store } from '@ngrx/store';
-import * as fromApp from '../../store/Base/IApp.State';
+import * as fromApp from '../../store/IApp.State';
 
 @Component({
   selector: 'app-intro',

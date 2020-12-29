@@ -1,8 +1,8 @@
-import { AbstractIntroStoreAction } from '../AbstractIntroStoreAction';
+import { AbstractIntroStoreAction } from '../AbstractIntro.StoreAction';
 import { IntroActionNames } from '../IntroActionNames';
 import { IIntroState } from '../IIntro.State';
 
-export class GetIntroDto extends AbstractIntroStoreAction {
+export class GetIntroAction extends AbstractIntroStoreAction {
   readonly type = IntroActionNames.GET_INTRO;
 
   constructor() {

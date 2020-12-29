@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
 import { AboutDTO } from 'src/app/dto/about-dto';
-import * as fromApp from '../../store/Base/IApp.State';
+import * as fromApp from '../../store/IApp.State';
 
 @Component({
   selector: 'app-about',

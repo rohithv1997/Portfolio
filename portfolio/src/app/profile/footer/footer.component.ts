@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Subscription } from 'rxjs';
 import { FooterDTO } from 'src/app/dto/footer-dto';
-import * as fromApp from '../../store/Base/IApp.State';
+import * as fromApp from '../../store/IApp.State';
 
 @Component({
   selector: 'app-footer',
