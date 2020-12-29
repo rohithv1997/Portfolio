@@ -10,7 +10,7 @@ export class FooterReducer extends AbstractFooterReducer {
   };
 
   public execute(
-    state: IFooterState,
+    state = this.initialState,
     action: AbstractFooterStoreAction
   ): IFooterState {
     switch (action.type) {

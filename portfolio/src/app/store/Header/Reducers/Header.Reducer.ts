@@ -10,7 +10,7 @@ export class HeaderReducer extends AbstractHeaderReducer {
   };
 
   public execute(
-    state: IHeaderState,
+    state = this.initialState,
     action: AbstractHeaderStoreAction
   ): IHeaderState {
     switch (action.type) {

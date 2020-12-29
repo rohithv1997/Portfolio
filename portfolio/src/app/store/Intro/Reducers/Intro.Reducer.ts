@@ -10,7 +10,7 @@ export class IntroReducer extends AbstractIntroReducer {
   };
 
   public execute(
-    state: IIntroState,
+    state = this.initialState,
     action: AbstractIntroStoreAction
   ): IIntroState {
     switch (action.type) {

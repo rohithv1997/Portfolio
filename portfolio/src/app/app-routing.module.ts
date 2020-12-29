@@ -42,6 +42,10 @@ export const routes: Routes = [
     path: 'not-found',
     component: NotFoundComponent,
   },
+  {
+    path: '**',
+    redirectTo: '/not-found',
+  },
 ];
 
 @NgModule({
