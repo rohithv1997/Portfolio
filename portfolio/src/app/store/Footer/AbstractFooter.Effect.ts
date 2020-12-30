@@ -5,4 +5,4 @@ import { IFooterState } from './IFooter.State';
 
 export abstract class AbstractFooterEffect<
   TAction extends AbstractFooterStoreAction
-> extends AbstractAppEffect<IFooterState, FooterDTO, TAction> {}
+> extends AbstractAppEffect<FooterDTO, IFooterState, TAction> {}

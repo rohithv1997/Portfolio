@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Actions, Effect, ofType } from '@ngrx/effects';
+import { Actions, Effect } from '@ngrx/effects';
 import { Observable } from 'rxjs';
 import { IntroDTO } from 'src/app/dto/intro-dto';
 import { ApiService } from 'src/app/service/api.service';

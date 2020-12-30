@@ -6,7 +6,7 @@ import { IHeaderState } from '../IHeader.State';
 
 export class HeaderReducer extends AbstractHeaderReducer {
   protected initialState: IHeaderState = {
-    headerDto: new HeaderDTO(),
+    dto: new HeaderDTO(),
   };
 
   public execute(

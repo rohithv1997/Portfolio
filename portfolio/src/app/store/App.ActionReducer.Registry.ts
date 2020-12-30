@@ -4,10 +4,12 @@ import * as fromHeader from './Header/Reducers/Header.ActionReducer';
 import * as fromIntro from './Intro/Reducers/Intro.ActionReducer';
 import * as fromFooter from './Footer/Reducers/Footer.ActionReducer';
 import * as fromAbout from './About/Reducers/About.ActionReducer';
+import * as fromExperience from './Experience/Reducers/Experience.ActionReducer';
 
 export const appActionReducerRegistry: ActionReducerMap<IAppState> = {
   headerState: new fromHeader.HeaderActionReducer().actionReducer,
   introState: new fromIntro.IntroActionReducer().actionReducer,
   aboutState: new fromAbout.AboutActionReducer().actionReducer,
   footerState: new fromFooter.FooterActionReducer().actionReducer,
+  experienceState: new fromExperience.ExperienceActionReducer().actionReducer,
 };

@@ -6,7 +6,7 @@ import { IAboutState } from '../IAbout.State';
 
 export class AboutReducer extends AbstractAboutReducer {
   protected readonly initialState: IAboutState = {
-    aboutDto: new AboutDTO(),
+    dto: new AboutDTO(),
   };
 
   public execute(

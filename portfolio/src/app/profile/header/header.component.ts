@@ -1,27 +1,27 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HeaderDTO } from 'src/app/dto/header-dto';
-import { Subscription } from 'rxjs';
 import { Store } from '@ngrx/store';
 import * as fromApp from '../../store/IApp.State';
+import { AbstractProfileComponent } from '../AbstractProfile.Component';
+import { IHeaderState } from 'src/app/store/Header/IHeader.State';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent implements OnInit, OnDestroy {
-  public data!: HeaderDTO;
-  private subscription!: Subscription;
-
-  constructor(private store: Store<fromApp.IAppState>) {}
+export class HeaderComponent
+  extends AbstractProfileComponent<HeaderDTO, IHeaderState>
+  implements OnInit, OnDestroy {
+  constructor(store: Store<fromApp.IAppState>) {
+    super(store, 'headerState');
+  }
 
   ngOnInit(): void {
-    this.subscription = this.store.select('headerState').subscribe((headerState) => {
-      this.data = headerState.headerDto;
-    });
+    super.ngOnInit();
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    super.ngOnDestroy();
   }
 }

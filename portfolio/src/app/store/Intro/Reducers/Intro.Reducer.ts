@@ -6,7 +6,7 @@ import { IntroActionNames } from '../IntroActionNames';
 
 export class IntroReducer extends AbstractIntroReducer {
   protected initialState: IIntroState = {
-    introDto: new IntroDTO(),
+    dto: new IntroDTO(),
   };
 
   public execute(

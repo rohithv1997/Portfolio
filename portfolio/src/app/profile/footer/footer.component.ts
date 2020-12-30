@@ -1,27 +1,27 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Subscription } from 'rxjs';
 import { FooterDTO } from 'src/app/dto/footer-dto';
+import { IFooterState } from 'src/app/store/Footer/IFooter.State';
 import * as fromApp from '../../store/IApp.State';
+import { AbstractProfileComponent } from '../AbstractProfile.Component';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
 })
-export class FooterComponent implements OnInit, OnDestroy {
-  public data!: FooterDTO;
-  private subscription!: Subscription;
-
-  constructor(private store: Store<fromApp.IAppState>) {}
+export class FooterComponent
+  extends AbstractProfileComponent<FooterDTO, IFooterState>
+  implements OnInit, OnDestroy {
+  constructor(store: Store<fromApp.IAppState>) {
+    super(store, 'footerState');
+  }
 
   ngOnInit(): void {
-    this.subscription = this.store.select('footerState').subscribe((footerState) => {
-      this.data = footerState.footerDto;
-    });
+    super.ngOnInit();
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    super.ngOnDestroy();
   }
 }

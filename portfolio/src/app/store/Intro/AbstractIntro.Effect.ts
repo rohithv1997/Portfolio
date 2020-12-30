@@ -5,4 +5,4 @@ import { IIntroState } from './IIntro.State';
 
 export abstract class AbstractIntroEffect<
   TAction extends AbstractIntroStoreAction
-> extends AbstractAppEffect<IIntroState, IntroDTO, TAction> {}
+> extends AbstractAppEffect<IntroDTO, IIntroState, TAction> {}

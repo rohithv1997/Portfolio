@@ -5,4 +5,4 @@ import { IAboutState } from './IAbout.State';
 
 export abstract class AbstractAboutEffect<
   TAction extends AbstractAboutStoreAction
-> extends AbstractAppEffect<IAboutState, AboutDTO, TAction> {}
+> extends AbstractAppEffect<AboutDTO, IAboutState, TAction> {}

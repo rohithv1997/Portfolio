@@ -6,14 +6,14 @@ import { IAboutState } from '../IAbout.State';
 export class SetAboutAction extends AbstractAboutStoreAction {
   readonly type = AboutActionNames.SET_ABOUT;
 
-  constructor(public payload: AboutDTO) {
+  constructor(private payload: AboutDTO) {
     super();
   }
 
   execute(state: IAboutState): IAboutState {
     return {
       ...state,
-      aboutDto: this.payload,
+      dto: this.payload,
     };
   }
 }

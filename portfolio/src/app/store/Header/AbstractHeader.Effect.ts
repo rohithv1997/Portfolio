@@ -5,4 +5,4 @@ import { IHeaderState } from './IHeader.State';
 
 export abstract class AbstractHeaderEffect<
   TAction extends AbstractHeaderStoreAction
-> extends AbstractAppEffect<IHeaderState, HeaderDTO, TAction> {}
+> extends AbstractAppEffect<HeaderDTO, IHeaderState, TAction> {}

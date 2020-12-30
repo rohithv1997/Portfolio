@@ -6,7 +6,7 @@ import { IFooterState } from '../IFooter.State';
 
 export class FooterReducer extends AbstractFooterReducer {
   protected readonly initialState: IFooterState = {
-    footerDto: new FooterDTO(),
+    dto: new FooterDTO(),
   };
 
   public execute(

@@ -1,27 +1,27 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Subscription } from 'rxjs';
 import { AboutDTO } from 'src/app/dto/about-dto';
+import { IAboutState } from 'src/app/store/About/IAbout.State';
 import * as fromApp from '../../store/IApp.State';
+import { AbstractProfileComponent } from '../AbstractProfile.Component';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
 })
-export class AboutComponent implements OnInit, OnDestroy {
-  public data!: AboutDTO;
-  private subscription!: Subscription;
-
-  constructor(private store: Store<fromApp.IAppState>) {}
+export class AboutComponent
+  extends AbstractProfileComponent<AboutDTO, IAboutState>
+  implements OnInit, OnDestroy {
+  constructor(store: Store<fromApp.IAppState>) {
+    super(store, 'aboutState');
+  }
 
   ngOnInit(): void {
-    this.subscription = this.store.select('aboutState').subscribe((aboutState) => {
-      this.data = aboutState.aboutDto;
-    });
+    super.ngOnInit();
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    super.ngOnDestroy();
   }
 }

@@ -6,14 +6,14 @@ import { IHeaderState } from '../IHeader.State';
 export class SetHeaderAction extends AbstractHeaderStoreAction {
   readonly type = HeaderActionNames.SET_HEADER;
 
-  constructor(public payload: HeaderDTO) {
+  constructor(private payload: HeaderDTO) {
     super();
   }
 
   execute(state: IHeaderState): IHeaderState {
     return {
       ...state,
-      headerDto: this.payload,
+      dto: this.payload,
     };
   }
 }

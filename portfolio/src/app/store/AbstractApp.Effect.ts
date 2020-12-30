@@ -6,9 +6,9 @@ import { AbstractAppStoreAction } from './AbstractApp.StoreAction';
 import { IState } from './IState';
 
 export abstract class AbstractAppEffect<
-  TState extends IState,
   TDto extends IDto,
-  TAction extends AbstractAppStoreAction<TState>
+  TState extends IState<TDto>,
+  TAction extends AbstractAppStoreAction<TDto, TState>
 > {
   constructor(private type: string, private actions$: Actions) {}
 
