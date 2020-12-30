@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -58,6 +59,7 @@ import * as fromAppEffects from './store/App.Effects.Registry';
     MatListModule,
     MatCardModule,
     MatTabsModule,
+    MatStepperModule,
     HttpClientModule,
     StoreModule.forRoot(fromApp.appActionReducerRegistry),
     EffectsModule.forRoot(fromAppEffects.appEffectsRegistry),

@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 import { ExperienceDTO } from 'src/app/dto/experience-dto';
 import { IExperienceState } from 'src/app/store/Experience/IExperience.State';
 import { AbstractProfileComponent } from '../AbstractProfile.Component';
@@ -9,6 +10,12 @@ import * as fromApp from '../../store/IApp.State';
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css'],
+  providers: [
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: { displayDefaultIndicatorType: false },
+    },
+  ],
 })
 export class ExperienceComponent
   extends AbstractProfileComponent<ExperienceDTO, IExperienceState>
