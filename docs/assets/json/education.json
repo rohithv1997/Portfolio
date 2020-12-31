@@ -1,26 +1,25 @@
 {
-    "educationTitle": "Education",
-    "schools":
-    [{
-            "school": "School Hide Name",
-            "period": "2018",
-            "educationTitle": "Title ...",
-            "category": "The course learn how ...",
-            "lines":
-            [
-                "The main target is ...",
-                "The second target is ...",
-                "The third target is ..."
-            ]
-        }, {
-            "school": "School2 Hide Name",
-            "period": "2013",
-            "educationTitle": "OLD Title ...",
-            "category": "The course learn how ... but now ...",
-            "lines":
-            [
-                "I don't remember ..."
-            ]
-        }
-    ]
+  "schools": [
+    {
+      "school": "SRM University",
+      "period": "2014-2018",
+      "educationTitle": "Bachelor of Technology",
+      "category": "Computer Science Engineering",
+      "lines": ["CGPA : 9.6"]
+    },
+    {
+      "school": "The Hindu Senior Secondary School",
+      "period": "2012-2014",
+      "educationTitle": "AISSCE",
+      "category": "Class 12",
+      "lines": ["Overall 92.8 %"]
+    },
+    {
+      "school": "The Hindu Senior Secondary School",
+      "period": "2002-2012",
+      "educationTitle": "SSE",
+      "category": "Class 10",
+      "lines": ["CGPA : 10/10"]
+    }
+  ]
 }

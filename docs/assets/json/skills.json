@@ -1,44 +1,40 @@
 {
-    "firstline":
-    [{
-            "title": "C#",
-            "percentage": "100"
-        }, {
-            "title": "Azure Functions",
-            "percentage": "100"
-        }
-    ],
-    "secondline":
-    [{
-            "title": "Azure Data Factory",
-            "percentage": "100"
-        }, {
-            "title": "Logic App",
-            "percentage": "100"
-        }
-    ],
-    "thirdline":
-    [{
-            "title": "SQL Server",
-            "percentage": "70"
-        }, {
-            "title": "Other Skill",
-            "percentage": "60"
-        }, {
-            "title": "Other Skill",
-            "percentage": "50"
-        }
-    ],
-    "fourthline":
-    [{
-            "title": "CSS",
-            "percentage": "0"
-        }, {
-            "title": "HTML",
-            "percentage": "0"
-        }, {
-            "title": "JS/JQuery",
-            "percentage": "0"
-        }
-    ]
+  "skills": [
+    {
+      "title": "C#",
+      "percentage": "100"
+    },
+    {
+      "title": "MongoDB",
+      "percentage": "70"
+    },
+    {
+      "title": "ExpressJS",
+      "percentage": "70"
+    },
+    {
+      "title": "Angular",
+      "percentage": "80"
+    },
+    {
+      "title": "NodeJS",
+      "percentage": "80"
+    },
+    {
+      "title": "SQL",
+      "percentage": "80"
+    },
+    {
+      "title": "Firebase",
+      "percentage": "70"
+    },
+    {
+      "title": "HTML",
+      "percentage": "70"
+    },
+    {
+      "title": "JS/JQuery",
+      "percentage": "70"
+    }
+  ]
 }
