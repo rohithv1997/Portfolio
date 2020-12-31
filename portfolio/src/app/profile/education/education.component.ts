@@ -4,11 +4,18 @@ import { IEducationState } from 'src/app/store/Education/IEducation.State';
 import { AbstractProfileComponent } from '../AbstractProfile.Component';
 import * as fromApp from '../../store/IApp.State';
 import { Store } from '@ngrx/store';
+import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper';
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.css'],
+  providers: [
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: { displayDefaultIndicatorType: false },
+    },
+  ],
 })
 export class EducationComponent
   extends AbstractProfileComponent<EducationDTO, IEducationState>

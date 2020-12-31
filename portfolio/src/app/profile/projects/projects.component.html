@@ -1,1 +1,15 @@
-<p>projects works!</p>
+<mat-accordion class="accordion-content" multi>
+  <mat-expansion-panel [expanded]="false" *ngFor="let item of data.items">
+    <mat-expansion-panel-header>
+      <mat-panel-title> {{ item.title }} </mat-panel-title>
+    </mat-expansion-panel-header>
+    <ul *ngFor="let textLine of item.text">
+      <li>{{ textLine }}</li>
+    </ul>
+    <div *ngIf="item.links !== undefined">
+      <a *ngFor="let link of item.links" href="{{ link.link }}">{{
+        link.title
+      }}</a>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

@@ -1,0 +1,21 @@
+.content {
+  padding-left: 10px;
+}
+
+.accordion-content .mat-expansion-panel-header-title,
+.accordion-content .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.accordion-content .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: whitesmoke;
+}

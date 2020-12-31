@@ -13,6 +13,7 @@ import * as fromApp from '../../store/IApp.State';
 export class ProjectsComponent
   extends AbstractProfileComponent<ProjectDTO, IProjectState>
   implements OnInit, OnDestroy {
+
   constructor(store: Store<fromApp.IAppState>) {
     super(store, 'projectState');
   }

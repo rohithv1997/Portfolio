@@ -10,6 +10,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -60,6 +62,8 @@ import * as fromAppEffects from './store/App.Effects.Registry';
     MatCardModule,
     MatTabsModule,
     MatStepperModule,
+    MatExpansionModule,
+    MatProgressBarModule,
     HttpClientModule,
     StoreModule.forRoot(fromApp.appActionReducerRegistry),
     EffectsModule.forRoot(fromAppEffects.appEffectsRegistry),

@@ -1,4 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
+import { ProgressBarMode } from '@angular/material/progress-bar';
 import { Store } from '@ngrx/store';
 import { SkillDTO } from 'src/app/dto/skill-dto';
 import { ISkillState } from 'src/app/store/Skill/ISkill.State';
@@ -12,6 +14,7 @@ import { AbstractProfileComponent } from '../AbstractProfile.Component';
 export class SkillsComponent
   extends AbstractProfileComponent<SkillDTO, ISkillState>
   implements OnInit, OnDestroy {
+
   constructor(store: Store<fromApp.IAppState>) {
     super(store, 'skillState');
   }
