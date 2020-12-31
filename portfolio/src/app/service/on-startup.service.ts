@@ -6,6 +6,9 @@ import { GetIntroAction } from '../store/Intro/Actions/GetIntro.Action';
 import { GetAboutAction } from '../store/About/Actions/GetAbout.Action';
 import { GetFooterAction } from '../store/Footer/Actions/GetFooter.Action';
 import { GetExperienceAction } from '../store/Experience/Actions/GetExperience.Action';
+import { GetEducationAction } from '../store/Education/Actions/GetEducation.Action';
+import { GetProjectAction } from '../store/Project/Actions/GetProject.Action';
+import { GetSkillAction } from '../store/Skill/Actions/GetSkill.Action';
 
 @Injectable({
   providedIn: 'root',
@@ -19,5 +22,8 @@ export class OnStartupService {
     this.store.dispatch(new GetAboutAction());
     this.store.dispatch(new GetFooterAction());
     this.store.dispatch(new GetExperienceAction());
+    this.store.dispatch(new GetEducationAction());
+    this.store.dispatch(new GetProjectAction());
+    this.store.dispatch(new GetSkillAction());
   }
 }

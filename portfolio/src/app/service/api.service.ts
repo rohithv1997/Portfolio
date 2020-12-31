@@ -9,7 +9,7 @@ import { FooterDTO } from '../dto/footer-dto';
 import { HeaderDTO } from '../dto/header-dto';
 import { IntroDTO } from '../dto/intro-dto';
 import { ProjectDTO } from '../dto/project-dto';
-import { SkillsDTO } from '../dto/skills-dto';
+import { SkillDTO } from '../dto/skill-dto';
 
 @Injectable({
   providedIn: 'root',
@@ -32,8 +32,8 @@ export class ApiService {
     return this.httpClient.get<ExperienceDTO>(environment.apiUrlExperienceGet);
   }
 
-  get Skill(): Observable<SkillsDTO> {
-    return this.httpClient.get<SkillsDTO>(environment.apiUrlSkillGet);
+  get Skill(): Observable<SkillDTO> {
+    return this.httpClient.get<SkillDTO>(environment.apiUrlSkillGet);
   }
 
   get Footer(): Observable<FooterDTO> {

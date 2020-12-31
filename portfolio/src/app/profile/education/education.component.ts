@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { EducationDTO } from 'src/app/dto/education-dto';
+import { IEducationState } from 'src/app/store/Education/IEducation.State';
+import { AbstractProfileComponent } from '../AbstractProfile.Component';
+import * as fromApp from '../../store/IApp.State';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  styleUrls: ['./education.component.css'],
 })
-export class EducationComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class EducationComponent
+  extends AbstractProfileComponent<EducationDTO, IEducationState>
+  implements OnInit, OnDestroy {
+  constructor(store: Store<fromApp.IAppState>) {
+    super(store, 'educationState');
   }
 
+  ngOnInit(): void {
+    super.ngOnInit();
+  }
+
+  ngOnDestroy(): void {
+    super.ngOnDestroy();
+  }
 }
