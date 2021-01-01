@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './profile/about/about.component';
+import { CertificationComponent } from './profile/certification/certification.component';
 import { EducationComponent } from './profile/education/education.component';
 import { ExperienceComponent } from './profile/experience/experience.component';
 import { IntroComponent } from './profile/intro/intro.component';
@@ -33,6 +34,10 @@ export const routes: Routes = [
   {
     path: 'Skills',
     component: SkillsComponent,
+  },
+  {
+    path: 'Certifications',
+    component: CertificationComponent,
   },
   {
     path: 'Education',

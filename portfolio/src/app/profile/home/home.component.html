@@ -8,15 +8,15 @@
     [opened]="(isHandset$ | async) === false"
   >
     <mat-nav-list>
-      <mat-list-item
+      <a
+        mat-list-item
         *ngFor="let button of data"
-        mat-button
-        color="accent"
         routerLink="/{{ button }}"
-        routerLinkActive="[is-active]"
+        [routerLinkActive]="['is-active']"
+        class="content"
       >
-        {{ button }}
-      </mat-list-item>
+        <span>{{ button }}</span>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

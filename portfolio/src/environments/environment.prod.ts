@@ -8,4 +8,5 @@ export const environment = {
   apiUrlFooterGet: '/assets/json/footer.json',
   apiUrlEducationGet: '/assets/json/education.json',
   apiUrlProjectGet: '/assets/json/projects.json',
+  apiUrlCertificationGet: '/assets/json/certifications.json'
 };

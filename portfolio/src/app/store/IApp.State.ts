@@ -6,6 +6,7 @@ import * as fromExperience from './Experience/IExperience.State';
 import * as fromEducation from './Education/IEducation.State';
 import * as fromProject from './Project/IProject.State';
 import * as fromSkill from './Skill/ISkill.State';
+import * as fromCertification from './Certification/ICertification.State';
 
 export interface IAppState {
   headerState: fromHeader.IHeaderState;
@@ -16,4 +17,5 @@ export interface IAppState {
   educationState: fromEducation.IEducationState;
   projectState: fromProject.IProjectState;
   skillState: fromSkill.ISkillState;
+  certificationState: fromCertification.ICertificationState;
 }

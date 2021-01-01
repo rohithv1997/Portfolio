@@ -6,6 +6,7 @@ import { introEffectsRegistry } from './Intro/Intro.Effects.Registry';
 import { educationEffectsRegistry } from './Education/Education.Effects.Registry';
 import { projectEffectsRegistry } from './Project/Project.Effects.Registry';
 import { skillEffectsRegistry } from './Skill/Skill.Effects.Registry';
+import { certificationEffectsRegistry } from './Certification/Certification.Effects.Registry';
 
 export const appEffectsRegistry = [
   ...headerEffectsRegistry,
@@ -16,4 +17,5 @@ export const appEffectsRegistry = [
   ...educationEffectsRegistry,
   ...projectEffectsRegistry,
   ...skillEffectsRegistry,
+  ...certificationEffectsRegistry,
 ];

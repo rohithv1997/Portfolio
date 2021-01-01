@@ -27,6 +27,7 @@ import { ExperienceComponent } from './profile/experience/experience.component';
 import { SkillsComponent } from './profile/skills/skills.component';
 import { EducationComponent } from './profile/education/education.component';
 import { IntroComponent } from './profile/intro/intro.component';
+import { CertificationComponent } from './profile/certification/certification.component';
 
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
@@ -48,6 +49,7 @@ import * as fromAppEffects from './store/App.Effects.Registry';
     SkillsComponent,
     EducationComponent,
     IntroComponent,
+    CertificationComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

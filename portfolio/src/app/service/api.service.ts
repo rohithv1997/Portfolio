@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { AboutDTO } from '../dto/about-dto';
+import { CertificationDTO } from '../dto/certification-dto';
 import { EducationDTO } from '../dto/education-dto';
 import { ExperienceDTO } from '../dto/experience-dto';
 import { FooterDTO } from '../dto/footer-dto';
@@ -46,5 +47,9 @@ export class ApiService {
 
   get Project(): Observable<ProjectDTO> {
     return this.httpClient.get<ProjectDTO>(environment.apiUrlProjectGet);
+  }
+
+  get Certification(): Observable<CertificationDTO> {
+    return this.httpClient.get<CertificationDTO>(environment.apiUrlCertificationGet);
   }
 }

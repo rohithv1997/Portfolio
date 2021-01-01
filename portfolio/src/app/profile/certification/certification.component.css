@@ -13,10 +13,13 @@
 }
 
 a {
-  color: ivory;
-  font-family: monospace;
+  color: palevioletred;
 }
 
 .accordion-content .mat-expansion-panel-header-title {
   color: palevioletred;
+}
+
+.content{
+  color: whitesmoke;
 }

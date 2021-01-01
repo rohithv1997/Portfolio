@@ -9,6 +9,7 @@ import { GetExperienceAction } from '../store/Experience/Actions/GetExperience.A
 import { GetEducationAction } from '../store/Education/Actions/GetEducation.Action';
 import { GetProjectAction } from '../store/Project/Actions/GetProject.Action';
 import { GetSkillAction } from '../store/Skill/Actions/GetSkill.Action';
+import { GetCertificationAction } from '../store/Certification/Actions/GetCertification.Action';
 
 @Injectable({
   providedIn: 'root',
@@ -25,5 +26,6 @@ export class OnStartupService {
     this.store.dispatch(new GetEducationAction());
     this.store.dispatch(new GetProjectAction());
     this.store.dispatch(new GetSkillAction());
+    this.store.dispatch(new GetCertificationAction());
   }
 }
