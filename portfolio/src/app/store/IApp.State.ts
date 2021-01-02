@@ -1,6 +1,6 @@
 import * as fromHeader from './Header/IHeader.State';
 import * as fromIntro from './Intro/IIntro.State';
-import * as fromAbout from './About/IAbout.State';
+import * as fromContact from './Contact/IContact.State';
 import * as fromFooter from './Footer/IFooter.State';
 import * as fromExperience from './Experience/IExperience.State';
 import * as fromEducation from './Education/IEducation.State';
@@ -11,7 +11,7 @@ import * as fromCertification from './Certification/ICertification.State';
 export interface IAppState {
   headerState: fromHeader.IHeaderState;
   introState: fromIntro.IIntroState;
-  aboutState: fromAbout.IAboutState;
+  contactState: fromContact.IContactState;
   footerState: fromFooter.IFooterState;
   experienceState: fromExperience.IExperienceState;
   educationState: fromEducation.IEducationState;

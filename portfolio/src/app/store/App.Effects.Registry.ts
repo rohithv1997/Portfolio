@@ -1,4 +1,4 @@
-import { aboutEffectsRegistry } from './About/About.Effects.Registry';
+import { contactEffectsRegistry } from './Contact/Contact.Effects.Registry';
 import { experienceEffectsRegistry } from './Experience/Experience.Effects.Registry';
 import { footerEffectsRegistry } from './Footer/Footer.Effects.Registry';
 import { headerEffectsRegistry } from './Header/Header.Effects.Registry';
@@ -11,7 +11,7 @@ import { certificationEffectsRegistry } from './Certification/Certification.Effe
 export const appEffectsRegistry = [
   ...headerEffectsRegistry,
   ...introEffectsRegistry,
-  ...aboutEffectsRegistry,
+  ...contactEffectsRegistry,
   ...footerEffectsRegistry,
   ...experienceEffectsRegistry,
   ...educationEffectsRegistry,

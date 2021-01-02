@@ -2,8 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { AboutDTO } from '../dto/about-dto';
 import { CertificationDTO } from '../dto/certification-dto';
+import { ContactDTO } from '../dto/contact-dto';
 import { EducationDTO } from '../dto/education-dto';
 import { ExperienceDTO } from '../dto/experience-dto';
 import { FooterDTO } from '../dto/footer-dto';
@@ -26,9 +26,10 @@ export class ApiService {
     return this.httpClient.get<IntroDTO>(environment.apiUrlIntroGet);
   }
 
-  get About(): Observable<AboutDTO> {
-    return this.httpClient.get<AboutDTO>(environment.apiUrlAboutGet);
+  get Contact(): Observable<ContactDTO> {
+    return this.httpClient.get<ContactDTO>(environment.apiUrlContactGet);
   }
+
   get Experience(): Observable<ExperienceDTO> {
     return this.httpClient.get<ExperienceDTO>(environment.apiUrlExperienceGet);
   }

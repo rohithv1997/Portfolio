@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   apiUrlHeaderGet: '/assets/json/header.json',
   apiUrlIntroGet: '/assets/json/intro.json',
-  apiUrlAboutGet: '/assets/json/about.json',
+  apiUrlContactGet: '/assets/json/contact.json',
   apiUrlExperienceGet: '/assets/json/experience.json',
   apiUrlSkillGet: '/assets/json/skills.json',
   apiUrlFooterGet: '/assets/json/footer.json',

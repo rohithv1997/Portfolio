@@ -18,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './profile/home/home.component';
-import { AboutComponent } from './profile/about/about.component';
+import { ContactComponent } from './profile/contact/contact.component';
 import { FooterComponent } from './profile/footer/footer.component';
 import { HeaderComponent } from './profile/header/header.component';
 import { ProjectsComponent } from './profile/projects/projects.component';
@@ -40,7 +40,7 @@ import * as fromAppEffects from './store/App.Effects.Registry';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
+    ContactComponent,
     FooterComponent,
     HeaderComponent,
     ProjectsComponent,

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './profile/about/about.component';
+import { ContactComponent } from './profile/contact/contact.component';
 import { CertificationComponent } from './profile/certification/certification.component';
 import { EducationComponent } from './profile/education/education.component';
 import { ExperienceComponent } from './profile/experience/experience.component';
@@ -18,10 +18,6 @@ export const routes: Routes = [
   {
     path: 'Intro',
     component: IntroComponent,
-  },
-  {
-    path: 'About',
-    component: AboutComponent,
   },
   {
     path: 'Experience',
@@ -42,6 +38,10 @@ export const routes: Routes = [
   {
     path: 'Education',
     component: EducationComponent,
+  },
+  {
+    path: 'Contact',
+    component: ContactComponent,
   },
   {
     path: 'not-found',
