@@ -7,6 +7,14 @@
       },
       "instructor": "Maximilian Schwarzmüller",
       "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Angular & NodeJS - The MEAN Stack Guide [2021 Edition]",
+        "link": "https://www.udemy.com/certificate/UC-2f5e81f2-8d73-4719-965f-9a7df4c18e05/"
+      },
+      "instructor": "Maximilian Schwarzmüller",
+      "website": "Udemy"
     }
   ]
 }
