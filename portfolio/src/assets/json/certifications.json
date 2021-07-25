@@ -23,6 +23,22 @@
       },
       "instructor": "Al Sweigart",
       "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Learn How To Code: Google's Go (golang) Programming Language",
+        "link": "https://www.udemy.com/certificate/UC-16be25ee-60f1-4e27-8aab-f1977d7d5cd2/"
+      },
+      "instructor": "Todd McLeod",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Design Patterns in Go",
+        "link": "https://www.udemy.com/certificate/UC-10cb3662-1b59-4423-a285-9e9b8471c495/"
+      },
+      "instructor": "Dmitri Nesteruk",
+      "website": "Udemy"
     }
   ]
 }
