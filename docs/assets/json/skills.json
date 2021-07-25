@@ -1,28 +1,28 @@
 {
   "skills": [
     {
+      "title": "Go",
+      "percentage": "90"
+    },
+    {
       "title": "C#",
       "percentage": "100"
     },
     {
       "title": "MongoDB",
-      "percentage": "70"
+      "percentage": "60"
     },
     {
       "title": "ExpressJS",
-      "percentage": "70"
-    },
-    {
-      "title": "ExpressJS",
-      "percentage": "70"
+      "percentage": "60"
     },
     {
       "title": "Angular",
-      "percentage": "80"
+      "percentage": "60"
     },
     {
       "title": "NodeJS",
-      "percentage": "80"
+      "percentage": "60"
     },
     {
       "title": "SQL",

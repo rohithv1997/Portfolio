@@ -25,6 +25,14 @@
       ]
     },
     {
+      "title": "Message Broker Implementation in Odessa Core",
+      "text":[
+        "Designed and implemented the initial architecture for Message Broker integration in Framework",
+        "Built the architecture and developed integration with RabbitMQ and Azure Service Bus",
+        "Built custom Components that publish and subscribe to various message brokers"
+      ]
+    },
+    {
       "title": "Data Access Layer Cache Implementation in Odessa Core",
       "text": [
         "Designed and developed in process cache implementation for subsystems.",
