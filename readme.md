@@ -14,5 +14,7 @@ Run below commands before pushing to remote
 * git push -u origin main
 
 // Firebase deploy
+
 run : npm run dev:ssr
+
 run : firebase deploy
