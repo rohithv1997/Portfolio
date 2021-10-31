@@ -42,6 +42,22 @@
     },
     {
       "linkDetail": {
+        "title": "Learn Rust by Building Real Applications",
+        "link": "https://www.udemy.com/certificate/UC-ce36009b-700d-4255-b9ad-817532db23dc/"
+      },
+      "instructor": "Lyubomir Gavadinov",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Web Development w/ Google’s Go (golang) Programming Language",
+        "link": "https://www.udemy.com/certificate/UC-58aabb4e-f7b0-4740-a2fd-02aa15f4ab1f/"
+      },
+      "instructor": "Todd McLeod",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
         "title": "Web Authentication, Encryption, JWT, HMAC, & OAuth With Go",
         "link": "https://www.udemy.com/certificate/UC-ff1d57b9-2f43-4d1d-bad2-c996de2c6940/"
       },
