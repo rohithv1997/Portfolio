@@ -5,6 +5,18 @@
       "percentage": "90"
     },
     {
+      "title": "Rust",
+      "percentage": "70"
+    },
+    {
+      "title": "React",
+      "percentage": "60"
+    },
+    {
+      "title": "React Native",
+      "percentage": "60"
+    },
+    {
       "title": "C#",
       "percentage": "100"
     },

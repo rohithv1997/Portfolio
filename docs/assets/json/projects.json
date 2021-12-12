@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "title": "Backend For Frontend Architecture for Netbanking login process",
+      "text": [
+        "Designed and developed backend for frontend architecture for login process in netbanking for android and ios platforms.",
+        "Designed and implemented the Finite state machine which is used as framework for BFF architecture",
+        "Decreased development time by parallelizing stages built using the framework which decreased time to deliver by 5x."
+      ]
+    },
+    {
+      "title": "Contributed to OpenTelemetry-Rust repository",
+      "text": [
+        "Add ability to force flush spans added as part of TracerProvider SDK"
+      ],
+      "links": [
+        {
+          "title": "Move force_flush from tracer provider API to SDK",
+          "link": "https://github.com/open-telemetry/opentelemetry-rust/pull/658"
+        }
+      ]
+    },
+    {
       "title": "Contributed to DotNet Runtime repository.",
       "text": [
         "Changes made for AOT compilation for static readonly types and fixing P0 tests"
