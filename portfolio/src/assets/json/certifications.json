@@ -63,6 +63,30 @@
       },
       "instructor": "Todd McLeod, Daniel Hoffmann",
       "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Web Architecture With Golang - Google's Go Language",
+        "link": "https://www.udemy.com/certificate/UC-d0506338-1a31-404a-967a-e198e01571d5/"
+      },
+      "instructor": "Todd McLeod, Daniel Hoffmann",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Collaboration and Crawling W/ Golang - Google's Go Language",
+        "link": "https://www.udemy.com/certificate/UC-cbde6e7c-6d4b-46d0-8408-63155edf01f2/"
+      },
+      "instructor": "Todd McLeod, Daniel Hoffmann",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Redis - World's Fastest Database - Beginners to Advance",
+        "link": "https://www.udemy.com/certificate/UC-eef1e0ae-a7b7-4f43-a0e1-1e1250962c7a/"
+      },
+      "instructor": "Vikas Kumar Jha, Poonam Jha",
+      "website": "Udemy"
     }
   ]
 }
