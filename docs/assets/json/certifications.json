@@ -87,6 +87,14 @@
       },
       "instructor": "Vikas Kumar Jha, Poonam Jha",
       "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Master the Coding Interview: Data Structures + Algorithms",
+        "link": "https://www.udemy.com/certificate/UC-146992e6-ecb9-4e48-89a5-975bd304416c/"
+      },
+      "instructor": "Andrei Neagoie, Zero To Mastery",
+      "website": "Udemy"
     }
   ]
 }
