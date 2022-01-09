@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { GetContactEffect } from './Effects/GetContact.Effect';\nexport const contactEffectsRegistry = [GetContactEffect];","map":null,"metadata":{},"sourceType":"module"}

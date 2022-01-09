@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { GetCertificationEffect } from './Effects/GetCertification.Effect';\nexport const certificationEffectsRegistry = [GetCertificationEffect];","map":null,"metadata":{},"sourceType":"module"}

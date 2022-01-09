@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { AbstractAppReducer } from '../AbstractApp.Reducer';\nexport class AbstractEducationReducer extends AbstractAppReducer {}","map":null,"metadata":{},"sourceType":"module"}

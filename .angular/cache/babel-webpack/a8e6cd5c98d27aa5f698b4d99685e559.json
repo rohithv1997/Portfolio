@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { GetHeaderEffect } from './Effects/GetHeader.Effect';\nexport const headerEffectsRegistry = [GetHeaderEffect];","map":null,"metadata":{},"sourceType":"module"}

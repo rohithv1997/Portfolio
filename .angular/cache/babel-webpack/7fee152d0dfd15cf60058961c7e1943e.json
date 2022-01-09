@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { ContactReducer } from './Contact.Reducer';\nimport { AbstractAppActionReducer } from '../../AbstractApp.ActionReducer';\nexport class ContactActionReducer extends AbstractAppActionReducer {\n  get reducer() {\n    return new ContactReducer();\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

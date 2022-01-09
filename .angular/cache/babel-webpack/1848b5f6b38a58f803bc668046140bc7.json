@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { GetProjectEffect } from './Effects/GetProject.Effect';\nexport const projectEffectsRegistry = [GetProjectEffect];","map":null,"metadata":{},"sourceType":"module"}

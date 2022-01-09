@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { GetExperienceEffect } from './Effects/GetExperience.Effect';\nexport const experienceEffectsRegistry = [GetExperienceEffect];","map":null,"metadata":{},"sourceType":"module"}

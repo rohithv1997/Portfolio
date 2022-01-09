@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { AbstractAppEffect } from '../AbstractApp.Effect';\nexport class AbstractExperienceEffect extends AbstractAppEffect {}","map":null,"metadata":{},"sourceType":"module"}
