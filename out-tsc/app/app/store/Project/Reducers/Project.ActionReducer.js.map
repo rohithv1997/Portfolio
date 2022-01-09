@@ -1,0 +1,1 @@
+{"version":3,"file":"Project.ActionReducer.js","sourceRoot":"","sources":["../../../../../../src/app/store/Project/Reducers/Project.ActionReducer.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,wBAAwB,EAAE,MAAM,iCAAiC,CAAC;AAI3E,OAAO,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AAEnD,MAAM,OAAO,oBAAqB,SAAQ,wBAKzC;IACC,IAAc,OAAO;QACnB,OAAO,IAAI,cAAc,EAAE,CAAC;IAC9B,CAAC;CACF"}
