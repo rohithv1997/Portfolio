@@ -95,6 +95,14 @@
       },
       "instructor": "Andrei Neagoie, Zero To Mastery",
       "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Apache Kafka Series - Learn Apache Kafka for Beginners v2",
+        "link": "https://www.udemy.com/certificate/UC-8952ccda-674a-4472-9731-482049512ac5/"
+      },
+      "instructor": "Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer, Conduktor Inc",
+      "website": "Udemy"
     }
   ]
 }
