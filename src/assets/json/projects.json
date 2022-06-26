@@ -1,7 +1,42 @@
 {
   "items": [
     {
-      "title": "Backend For Frontend Architecture for Netbanking login process",
+      "title": "OTP Flooding prevention for MobileBanking and NetBanking",
+      "text": [
+        "Implemented Blocking flooding of OTP generation requests at OTP provider.",
+        "Implemented Locking of OTP generation requests at OTP provider.",
+        "Stopped DDoS attacks on OTP generation services"
+      ]
+    },
+    {
+      "title": "Data Provider Implementation in MobileBanking and NetBanking",
+      "text": [
+        "Implemented data provider from Core Banking system with average response time improved by 300x.",
+        "Integrated provider with predictive caching in mobile banking and net banking flows.",
+        "Reduced login response time by 100x using new data provider build using Debezium, Kafka, and Aerospike."
+      ]
+    },
+    {
+      "title": "Performance Improvements in MobileBanking Login",
+      "text": [
+        "Designed and implemented the OAuth implementation with Refresh token strategy for Mobile banking login.",
+        "Decreased login response time by 25x using refresh token strategy in Oauth2 workflow."
+      ]
+    },
+    {
+      "title": "Created library for mapping DTOs in runtime",
+      "text": [
+        "Create package in Go to map DTOs in runtime based on custom tags"
+      ],
+      "links": [
+        {
+          "title": "dto-mapper",
+          "link": "https://github.com/rohithv-tw/dto-mapper"
+        }
+      ]
+    },
+    {
+      "title": "Backend For Frontend Architecture for MobileBanking signup",
       "text": [
         "Designed and developed backend for frontend architecture for login process in netbanking for android and ios platforms.",
         "Designed and implemented the Finite state machine which is used as framework for BFF architecture",

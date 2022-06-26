@@ -2,7 +2,15 @@
   "skills": [
     {
       "title": "Go",
-      "percentage": "90"
+      "percentage": "100"
+    },
+    {
+      "title": "Docker",
+      "percentage": "80"
+    },
+    {
+      "title": "Kubernetes",
+      "percentage": "70"
     },
     {
       "title": "Rust",
