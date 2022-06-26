@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { GetFooterEffect } from './Effects/GetFooter.Effect';\nexport const footerEffectsRegistry = [GetFooterEffect];","map":null,"metadata":{},"sourceType":"module"}

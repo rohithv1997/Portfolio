@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { GetEducationEffect } from './Effects/GetEducation.Effect';\nexport const educationEffectsRegistry = [GetEducationEffect];","map":null,"metadata":{},"sourceType":"module"}

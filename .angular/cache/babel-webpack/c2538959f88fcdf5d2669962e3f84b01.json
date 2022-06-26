@@ -1,1 +1,0 @@
-{"ast":null,"code":"export class AbstractAppActionReducer {\n  constructor() {\n    this.actionReducer = (state, action) => this.reducer.execute(state, action);\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

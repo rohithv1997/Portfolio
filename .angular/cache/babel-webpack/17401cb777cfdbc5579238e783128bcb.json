@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { AbstractAppActionReducer } from '../../AbstractApp.ActionReducer';\nimport { ExperienceReducer } from './Experience.Reducer';\nexport class ExperienceActionReducer extends AbstractAppActionReducer {\n  get reducer() {\n    return new ExperienceReducer();\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

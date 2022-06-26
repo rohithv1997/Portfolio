@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { GetSkillEffect } from './Effects/GetSkill.Effect';\nexport const skillEffectsRegistry = [GetSkillEffect];","map":null,"metadata":{},"sourceType":"module"}

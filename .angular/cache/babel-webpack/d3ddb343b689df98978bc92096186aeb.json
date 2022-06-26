@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { AbstractAppStoreAction } from '../AbstractApp.StoreAction';\nexport class AbstractCertificationStoreAction extends AbstractAppStoreAction {}","map":null,"metadata":{},"sourceType":"module"}

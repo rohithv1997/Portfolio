@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { GetIntroEffect } from './Effects/GetIntro.Effect';\nexport const introEffectsRegistry = [GetIntroEffect];","map":null,"metadata":{},"sourceType":"module"}

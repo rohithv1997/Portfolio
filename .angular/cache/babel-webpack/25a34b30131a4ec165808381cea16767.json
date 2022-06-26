@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { FooterReducer } from './Footer.Reducer';\nimport { AbstractAppActionReducer } from '../../AbstractApp.ActionReducer';\nexport class FooterActionReducer extends AbstractAppActionReducer {\n  get reducer() {\n    return new FooterReducer();\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
