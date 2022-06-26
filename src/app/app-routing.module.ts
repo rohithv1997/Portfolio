@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { ContactComponent } from './profile/contact/contact.component';
-import { CertificationComponent } from './profile/certification/certification.component';
-import { EducationComponent } from './profile/education/education.component';
-import { ExperienceComponent } from './profile/experience/experience.component';
-import { IntroComponent } from './profile/intro/intro.component';
-import { NotFoundComponent } from './profile/not-found/not-found.component';
-import { ProjectsComponent } from './profile/projects/projects.component';
-import { SkillsComponent } from './profile/skills/skills.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {ContactComponent} from './profile/contact/contact.component';
+import {CertificationComponent} from './profile/certification/certification.component';
+import {EducationComponent} from './profile/education/education.component';
+import {ExperienceComponent} from './profile/experience/experience.component';
+import {IntroComponent} from './profile/intro/intro.component';
+import {NotFoundComponent} from './profile/not-found/not-found.component';
+import {ProjectsComponent} from './profile/projects/projects.component';
+import {SkillsComponent} from './profile/skills/skills.component';
 
 export const routes: Routes = [
   {
@@ -56,7 +56,7 @@ export const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      initialNavigation: 'enabled',
+      initialNavigation: 'enabledBlocking',
     }),
   ],
   exports: [RouterModule],
