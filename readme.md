@@ -1,15 +1,6 @@
-Run below commands before pushing to remote
+Deploy production build into Firebase:
 
-* ng build --prod=true --outputPath="../docs" --baseHref=/Portfolio/
+* ng build
+* firebase deploy
 
-* git add .
-
-* git commit 
-
-* git push -u origin main
-
-Firebase deploy
-
-* run : ng serve --open
-
-* run : firebase deploy
+TODO : Support Github pages
