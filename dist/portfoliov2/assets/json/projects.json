@@ -1,0 +1,129 @@
+{
+  "items": [
+    {
+      "title": "OTP Flooding prevention for MobileBanking and NetBanking",
+      "text": [
+        "Implemented Blocking flooding of OTP generation requests at OTP provider.",
+        "Implemented Locking of OTP generation requests at OTP provider.",
+        "Stopped DDoS attacks on OTP generation services"
+      ]
+    },
+    {
+      "title": "Data Provider Implementation in MobileBanking and NetBanking",
+      "text": [
+        "Implemented data provider from Core Banking system with average response time improved by 300x.",
+        "Integrated provider with predictive caching in mobile banking and net banking flows.",
+        "Reduced login response time by 100x using new data provider build using Debezium, Kafka, and Aerospike."
+      ]
+    },
+    {
+      "title": "Performance Improvements in MobileBanking Login",
+      "text": [
+        "Designed and implemented the OAuth implementation with Refresh token strategy for Mobile banking login.",
+        "Decreased login response time by 25x using refresh token strategy in Oauth2 workflow."
+      ]
+    },
+    {
+      "title": "Created library for mapping DTOs in runtime",
+      "text": [
+        "Create package in Go to map DTOs in runtime based on custom tags"
+      ],
+      "links": [
+        {
+          "title": "dto-mapper",
+          "link": "https://github.com/rohithv-tw/dto-mapper"
+        }
+      ]
+    },
+    {
+      "title": "Backend For Frontend Architecture for MobileBanking signup",
+      "text": [
+        "Designed and developed backend for frontend architecture for login process in netbanking for android and ios platforms.",
+        "Designed and implemented the Finite state machine which is used as framework for BFF architecture",
+        "Decreased development time by parallelizing stages built using the framework which decreased time to deliver by 5x."
+      ]
+    },
+    {
+      "title": "Contributed to OpenTelemetry-Rust repository",
+      "text": [
+        "Add ability to force flush spans added as part of TracerProvider SDK"
+      ],
+      "links": [
+        {
+          "title": "Move force_flush from tracer provider API to SDK",
+          "link": "https://github.com/open-telemetry/opentelemetry-rust/pull/658"
+        }
+      ]
+    },
+    {
+      "title": "Contributed to DotNet Runtime repository.",
+      "text": [
+        "Changes made for AOT compilation for static readonly types and fixing P0 tests"
+      ],
+      "links": [
+        {
+          "title": "Reference : Allow reflection setting readonly static fields when cctor is still running",
+          "link": "https://github.com/dotnet/runtimelab/pull/353"
+        }
+      ]
+    },
+    {
+      "title": "Portfolio Website",
+      "text": [
+        "Designed and developed my portfolio website"
+      ],
+      "links": [
+        {
+          "title": "Reference : Rohith's Portfolio",
+          "link": "https://tinyurl.com/rohithv97-portfolio/"
+        }
+      ]
+    },
+    {
+      "title": "Message Broker Implementation in Odessa Core",
+      "text":[
+        "Designed and implemented the initial architecture for Message Broker integration in Framework",
+        "Built the architecture and developed integration with RabbitMQ and Azure Service Bus",
+        "Built custom Components that publish and subscribe to various message brokers"
+      ]
+    },
+    {
+      "title": "Data Access Layer Cache Implementation in Odessa Core",
+      "text": [
+        "Designed and developed in process cache implementation for subsystems.",
+        "Reduced data access layer calls by 90% from 4 hours to 1 minute by caching database calls invoked through Subsystems boilerplate code."
+      ]
+    },
+    {
+      "title": "Licensing Architecture Implementation in Odessa Tools",
+      "text": [
+        "Designed the initial architecture for the licensing software for the various products offered by Odessa.",
+        "Determined the licensing model to apply for various clients based on cloud and subscription based models.",
+        "Migrated existing hardware based licenses to the new model based on cloud and subscriptions."
+      ]
+    },
+    {
+      "title": "Batch Processing in Odessa Core",
+      "text": [
+        "Improved Parallel Processing Framework by enhancing Concurrent processing across multiple batches.",
+        "Increased Data processing speed by 20x by enabling execution of data across different batches."
+      ]
+    },
+    {
+      "title": "Role Based Security in Odessa Core",
+      "text": [
+        "Enhanced Role based Security to apply any existing role-based security config to current application.",
+        "Used customized 2D matrices to improve the processing time for about 400 entities.",
+        "Improved the import and export of role-based processing by 200x."
+      ]
+    },
+    {
+      "title": "Invoice Generation Implementation",
+      "text": [
+        "Implemented the entire customized Invoice file generation process that sends out monthly invoices to clients’ customers.",
+        "Scaled the invoice file generation process with performance improvements of about 110x for around 1 lakh invoice files generated per day.",
+        "Reduced the file size by 50x as compared to the product implementation."
+      ]
+    }
+  ]
+}

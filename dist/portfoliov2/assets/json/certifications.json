@@ -1,0 +1,108 @@
+{
+  "certificationDetails": [
+    {
+      "linkDetail": {
+        "title": "Angular - The Complete Guide (2021 Edition)",
+        "link": "https://www.udemy.com/certificate/UC-fb336cd9-3add-4b3b-b306-548a88d68541/"
+      },
+      "instructor": "Maximilian Schwarzmüller",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Angular & NodeJS - The MEAN Stack Guide [2021 Edition]",
+        "link": "https://www.udemy.com/certificate/UC-2f5e81f2-8d73-4719-965f-9a7df4c18e05/"
+      },
+      "instructor": "Maximilian Schwarzmüller",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Automate the Boring Stuff with Python Programming",
+        "link": "https://www.udemy.com/certificate/UC-5fc93f8c-d17d-4d25-b0f6-22d8431a1cfa/"
+      },
+      "instructor": "Al Sweigart",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Learn How To Code: Google's Go (golang) Programming Language",
+        "link": "https://www.udemy.com/certificate/UC-16be25ee-60f1-4e27-8aab-f1977d7d5cd2/"
+      },
+      "instructor": "Todd McLeod",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Design Patterns in Go",
+        "link": "https://www.udemy.com/certificate/UC-10cb3662-1b59-4423-a285-9e9b8471c495/"
+      },
+      "instructor": "Dmitri Nesteruk",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Learn Rust by Building Real Applications",
+        "link": "https://www.udemy.com/certificate/UC-ce36009b-700d-4255-b9ad-817532db23dc/"
+      },
+      "instructor": "Lyubomir Gavadinov",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Web Development w/ Google’s Go (golang) Programming Language",
+        "link": "https://www.udemy.com/certificate/UC-58aabb4e-f7b0-4740-a2fd-02aa15f4ab1f/"
+      },
+      "instructor": "Todd McLeod",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Web Authentication, Encryption, JWT, HMAC, & OAuth With Go",
+        "link": "https://www.udemy.com/certificate/UC-ff1d57b9-2f43-4d1d-bad2-c996de2c6940/"
+      },
+      "instructor": "Todd McLeod, Daniel Hoffmann",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Web Architecture With Golang - Google's Go Language",
+        "link": "https://www.udemy.com/certificate/UC-d0506338-1a31-404a-967a-e198e01571d5/"
+      },
+      "instructor": "Todd McLeod, Daniel Hoffmann",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Collaboration and Crawling W/ Golang - Google's Go Language",
+        "link": "https://www.udemy.com/certificate/UC-cbde6e7c-6d4b-46d0-8408-63155edf01f2/"
+      },
+      "instructor": "Todd McLeod, Daniel Hoffmann",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Redis - World's Fastest Database - Beginners to Advance",
+        "link": "https://www.udemy.com/certificate/UC-eef1e0ae-a7b7-4f43-a0e1-1e1250962c7a/"
+      },
+      "instructor": "Vikas Kumar Jha, Poonam Jha",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Master the Coding Interview: Data Structures + Algorithms",
+        "link": "https://www.udemy.com/certificate/UC-146992e6-ecb9-4e48-89a5-975bd304416c/"
+      },
+      "instructor": "Andrei Neagoie, Zero To Mastery",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Apache Kafka Series - Learn Apache Kafka for Beginners v2",
+        "link": "https://www.udemy.com/certificate/UC-8952ccda-674a-4472-9731-482049512ac5/"
+      },
+      "instructor": "Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer, Conduktor Inc",
+      "website": "Udemy"
+    }
+  ]
+}

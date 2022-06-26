@@ -1,0 +1,18 @@
+{
+  "jobs": [
+    {
+      "company": "Thought Works Inc.",
+      "period": "May 2021 - Present",
+      "jobTitle": "Application Developer",
+      "description": "Application Developer in Platform Core team for a leading private sector Bank",
+      "skills": ["Go", "Docker", "Kubernetes", "Redis", "Kafka", "React Native", "SQL", "CSS", "HTML"]
+    },
+    {
+      "company": "Odessa Technologies Inc.",
+      "period": "May 2018 - May 2021",
+      "jobTitle": "Senior Software Engineer",
+      "description": "Senior Software Engineer in R&D team",
+      "skills": ["C#", "SQL", "Angular", "jQuery", "CSS", "HTML"]
+    }
+  ]
+}
