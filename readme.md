@@ -10,6 +10,6 @@ Run below commands before pushing to remote
 
 Firebase deploy
 
-* run : npm run dev:ssr
+* run : ng serve --open
 
 * run : firebase deploy
