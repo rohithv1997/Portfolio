@@ -4,3 +4,9 @@ Deploy production build into Firebase:
 * firebase deploy
 
 TODO : Support Github pages
+
+
+Update packages:
+* rm -rf node_modules/
+* npm install
+* ng update
