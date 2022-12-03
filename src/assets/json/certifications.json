@@ -119,6 +119,14 @@
       },
       "instructor": "Academind by Maximilian Schwarzmüller, Maximilian Schwarzmüller ",
       "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "gRPC [Golang] Master Class: Build Modern API & Microservices",
+        "link": "https://www.udemy.com/certificate/UC-10240fec-0dc4-4ff1-9814-15622e2f132e/"
+      },
+      "instructor": "Clément Jean",
+      "website": "Udemy"
     }
   ]
 }
