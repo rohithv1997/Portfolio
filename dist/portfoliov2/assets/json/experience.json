@@ -1,8 +1,15 @@
 {
   "jobs": [
     {
+      "company": "Amazon Web Services",
+      "period": "November 2022 - Present",
+      "jobTitle": "SDE-2",
+      "description": "SDE-2 in AWS Professional Services - Customer Engineering",
+      "skills": ["Go", "Docker", "Kubernetes", "Redis", "Kafka", "React Native", "SQL", "CSS", "HTML"]
+    },
+    {
       "company": "Thought Works Inc.",
-      "period": "May 2021 - Present",
+      "period": "May 2021 - November 2022",
       "jobTitle": "Application Developer",
       "description": "Application Developer in Platform Core team for a leading private sector Bank",
       "skills": ["Go", "Docker", "Kubernetes", "Redis", "Kafka", "React Native", "SQL", "CSS", "HTML"]
