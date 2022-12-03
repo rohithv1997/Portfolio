@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { Actions, Effect } from '@ngrx/effects';
-import { Observable } from 'rxjs';
-import { CertificationDTO } from 'src/app/dto/certification-dto';
-import { ApiService } from 'src/app/service/api.service';
-import { AbstractCertificationEffect } from '../AbstractCertification.Effect';
-import { SetCertificationAction } from '../Actions/SetCertification.Action';
-import { CertificationActionNames } from '../CertificationActionNames';
+import {Injectable} from '@angular/core';
+import {Actions, createEffect} from '@ngrx/effects';
+import {Observable} from 'rxjs';
+import {CertificationDTO} from 'src/app/dto/certification-dto';
+import {ApiService} from 'src/app/service/api.service';
+import {AbstractCertificationEffect} from '../AbstractCertification.Effect';
+import {SetCertificationAction} from '../Actions/SetCertification.Action';
+import {CertificationActionNames} from '../CertificationActionNames';
 
 @Injectable()
 export class GetCertificationEffect extends AbstractCertificationEffect<SetCertificationAction> {
@@ -21,6 +21,5 @@ export class GetCertificationEffect extends AbstractCertificationEffect<SetCerti
     return new SetCertificationAction(args);
   }
 
-  @Effect()
-  public getCertificationEffect: Observable<SetCertificationAction> = this.Effect;
+    public getCertificationEffect: Observable<SetCertificationAction> = createEffect(() => this.Effect);
 }

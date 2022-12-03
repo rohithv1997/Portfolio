@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { Actions, Effect } from '@ngrx/effects';
-import { Observable } from 'rxjs';
-import { HeaderDTO } from 'src/app/dto/header-dto';
-import { ApiService } from 'src/app/service/api.service';
-import { AbstractHeaderEffect } from '../AbstractHeader.Effect';
-import { SetHeaderAction } from '../Actions/SetHeader.Action';
-import { HeaderActionNames } from '../HeaderActionNames';
+import {Injectable} from '@angular/core';
+import {Actions, createEffect} from '@ngrx/effects';
+import {Observable} from 'rxjs';
+import {HeaderDTO} from 'src/app/dto/header-dto';
+import {ApiService} from 'src/app/service/api.service';
+import {AbstractHeaderEffect} from '../AbstractHeader.Effect';
+import {SetHeaderAction} from '../Actions/SetHeader.Action';
+import {HeaderActionNames} from '../HeaderActionNames';
 
 @Injectable()
 export class GetHeaderEffect extends AbstractHeaderEffect<SetHeaderAction> {
@@ -21,6 +21,5 @@ export class GetHeaderEffect extends AbstractHeaderEffect<SetHeaderAction> {
     super(HeaderActionNames.GET_HEADER, actions$);
   }
 
-  @Effect()
-  public getHeaderEffect: Observable<SetHeaderAction> = this.Effect;
+  public getHeaderEffect: Observable<SetHeaderAction> = createEffect(() => this.Effect);
 }

@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { Actions, Effect } from '@ngrx/effects';
-import { Observable } from 'rxjs';
-import { SkillDTO } from 'src/app/dto/skill-dto';
-import { ApiService } from 'src/app/service/api.service';
-import { AbstractSkillEffect } from '../AbstractSkill.Effect';
-import { SetSkillAction } from '../Actions/SetSkill.Action';
-import { SkillActionNames } from '../SkillActionNames';
+import {Injectable} from '@angular/core';
+import {Actions, createEffect} from '@ngrx/effects';
+import {Observable} from 'rxjs';
+import {SkillDTO} from 'src/app/dto/skill-dto';
+import {ApiService} from 'src/app/service/api.service';
+import {AbstractSkillEffect} from '../AbstractSkill.Effect';
+import {SetSkillAction} from '../Actions/SetSkill.Action';
+import {SkillActionNames} from '../SkillActionNames';
 
 @Injectable()
 export class GetSkillEffect extends AbstractSkillEffect<SetSkillAction> {
@@ -21,6 +21,5 @@ export class GetSkillEffect extends AbstractSkillEffect<SetSkillAction> {
     return new SetSkillAction(args);
   }
 
-  @Effect()
-  public getSkillEffect: Observable<SetSkillAction> = this.Effect;
+  public getSkillEffect: Observable<SetSkillAction> = createEffect(() => this.Effect);
 }

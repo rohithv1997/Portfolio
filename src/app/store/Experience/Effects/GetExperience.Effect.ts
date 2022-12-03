@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { Actions, Effect } from '@ngrx/effects';
-import { Observable } from 'rxjs';
-import { ExperienceDTO } from 'src/app/dto/experience-dto';
-import { ApiService } from 'src/app/service/api.service';
-import { AbstractExperienceEffect } from '../AbstractExperience.Effect';
-import { SetExperienceAction } from '../Actions/SetExperience.Action';
-import { ExperienceActionNames } from '../ExperienceActionNames';
+import {Injectable} from '@angular/core';
+import {Actions, createEffect} from '@ngrx/effects';
+import {Observable} from 'rxjs';
+import {ExperienceDTO} from 'src/app/dto/experience-dto';
+import {ApiService} from 'src/app/service/api.service';
+import {AbstractExperienceEffect} from '../AbstractExperience.Effect';
+import {SetExperienceAction} from '../Actions/SetExperience.Action';
+import {ExperienceActionNames} from '../ExperienceActionNames';
 
 @Injectable()
 export class GetExperienceEffect extends AbstractExperienceEffect<SetExperienceAction> {
@@ -21,6 +21,5 @@ export class GetExperienceEffect extends AbstractExperienceEffect<SetExperienceA
     return new SetExperienceAction(args);
   }
 
-  @Effect()
-  public getIntroEffect: Observable<SetExperienceAction> = this.Effect;
+  public getIntroEffect: Observable<SetExperienceAction> = createEffect(() => this.Effect);
 }

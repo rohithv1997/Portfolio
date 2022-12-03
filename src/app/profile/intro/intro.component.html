@@ -3,17 +3,17 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
 
-<mat-card class="content">
-  <mat-card-header>
-    <mat-card-title>{{ data.fullName }}</mat-card-title>
-    <mat-card-subtitle>{{ data.shortDescription }}</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-actions>
-    <a
-      mat-icon-button
-      *ngFor="let button of data.buttons"
-      class="fa fa-{{ button.linkId }}"
-      href="{{ button.linkUrl }}"
+<mat-card appearance="outlined" class="content">
+    <mat-card-header>
+        <mat-card-title>{{ data.fullName }}</mat-card-title>
+        <mat-card-subtitle>{{ data.shortDescription }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+        <a
+                mat-icon-button
+                *ngFor="let button of data.buttons"
+                class="fa fa-{{ button.linkId }}"
+                href="{{ button.linkUrl }}"
       target="_blank"
     ></a>
   </mat-card-actions>

@@ -1,4 +1,4 @@
-<mat-card class="content" *ngFor="let skill of data.skills">
+<mat-card appearance="outlined" class="content" *ngFor="let skill of data.skills">
   <mat-card-header>
     <mat-card-title>{{ skill.title }}</mat-card-title>
     <mat-card-subtitle>{{ skill.percentage }} %</mat-card-subtitle>
@@ -6,9 +6,9 @@
   <mat-card-content>
     <section class="example-section">
       <mat-progress-bar
-        mode="determinate"
-        value="{{ skill.percentage }}"
-        color="warn"
+              mode="determinate"
+              value="{{ skill.percentage }}"
+              color="warn"
       ></mat-progress-bar>
     </section>
   </mat-card-content>

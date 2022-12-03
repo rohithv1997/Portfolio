@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { Actions, Effect } from '@ngrx/effects';
-import { Observable } from 'rxjs';
-import { IntroDTO } from 'src/app/dto/intro-dto';
-import { ApiService } from 'src/app/service/api.service';
-import { AbstractIntroEffect } from '../AbstractIntro.Effect';
-import { SetIntroAction } from '../Actions/SetIntro.Action';
-import { IntroActionNames } from '../IntroActionNames';
+import {Injectable} from '@angular/core';
+import {Actions, createEffect} from '@ngrx/effects';
+import {Observable} from 'rxjs';
+import {IntroDTO} from 'src/app/dto/intro-dto';
+import {ApiService} from 'src/app/service/api.service';
+import {AbstractIntroEffect} from '../AbstractIntro.Effect';
+import {SetIntroAction} from '../Actions/SetIntro.Action';
+import {IntroActionNames} from '../IntroActionNames';
 
 @Injectable()
 export class GetIntroEffect extends AbstractIntroEffect<SetIntroAction> {
@@ -21,6 +21,5 @@ export class GetIntroEffect extends AbstractIntroEffect<SetIntroAction> {
     return new SetIntroAction(args);
   }
 
-  @Effect()
-  public getIntroEffect: Observable<SetIntroAction> = this.Effect;
+  public getIntroEffect: Observable<SetIntroAction> = createEffect(() => this.Effect);
 }
