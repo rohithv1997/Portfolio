@@ -131,3 +131,6 @@ out
 
 .angular/cache
 .idea/
+out-tsc/
+dist/
+.firebase/

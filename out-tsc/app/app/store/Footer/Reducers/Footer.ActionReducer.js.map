@@ -1,1 +1,0 @@
-{"version":3,"file":"Footer.ActionReducer.js","sourceRoot":"","sources":["../../../../../../src/app/store/Footer/Reducers/Footer.ActionReducer.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,aAAa,EAAE,MAAM,kBAAkB,CAAC;AAEjD,OAAO,EAAE,wBAAwB,EAAE,MAAM,iCAAiC,CAAC;AAI3E,MAAM,OAAO,mBAAoB,SAAQ,wBAKxC;IACC,IAAc,OAAO;QACnB,OAAO,IAAI,aAAa,EAAE,CAAC;IAC7B,CAAC;CACF"}
