@@ -1,5 +1,13 @@
 {
-  "certificationDetails": [
+  "examCertifications": [
+    {
+      "linkDetail": {
+        "title": "AWS Certified Developer – Associate",
+        "link": "https://www.credly.com/badges/7318c867-725c-4b86-9ff7-ff5c7c4d77d3/"
+      }
+    }
+  ],
+  "courseCertifications": [
     {
       "linkDetail": {
         "title": "Angular - The Complete Guide (2021 Edition)",
@@ -126,6 +134,14 @@
         "link": "https://www.udemy.com/certificate/UC-10240fec-0dc4-4ff1-9814-15622e2f132e/"
       },
       "instructor": "Clément Jean",
+      "website": "Udemy"
+    },
+    {
+      "linkDetail": {
+        "title": "Ultimate AWS Certified Developer Associate 2023 NEW DVA-C02",
+        "link": "https://www.udemy.com/certificate/UC-ee4db616-a84b-4817-8c3f-260b3c7e8f66/"
+      },
+      "instructor": "Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer",
       "website": "Udemy"
     }
   ]
