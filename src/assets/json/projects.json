@@ -1,6 +1,23 @@
 {
   "items": [
     {
+      "title": "End-to-end design and implementation for cloud cost allocator",
+      "text": [
+        "FinHub Tier-1 asset will eliminate developer efforts required to customize the solution for each customer based on their requirements.",
+        "Designed and developed the step function to orchestrate data processing"
+      ]
+    },
+    {
+      "title": "Code generation for application modernization",
+      "text": [
+        "Evaluated and ranked open source tools available for code generation to support sping boot microservices.",
+        "Evaluated front-end frameworks to setup front-end code generation for Angular projects to be integrated with the code generation tool",
+        "Completed a successful PoC to enforce API contracts across and within frontend and backend microservices",
+        "Completed a successful PoC and developed LLD model to integrate DAPR with existing springboot microservice to standardize external calls from any microservice."
+
+      ]
+    },
+    {
       "title": "OTP Flooding prevention for MobileBanking and NetBanking",
       "text": [
         "Implemented Blocking flooding of OTP generation requests at OTP provider.",
