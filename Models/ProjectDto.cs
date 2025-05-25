@@ -1,4 +1,4 @@
-namespace PortfolioV2.Models;
+namespace Portfolio.Models;
 
 public record ProjectDetail(string Title, string[] Text);
 

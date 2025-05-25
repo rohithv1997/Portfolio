@@ -1,4 +1,4 @@
-namespace PortfolioV2.Models;
+namespace Portfolio.Models;
 
 public record SkillDetail(string Title, string Percentage)
 {

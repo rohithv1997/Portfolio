@@ -1,4 +1,4 @@
-namespace PortfolioV2.Models;
+namespace Portfolio.Models;
 
 public record HomeDto(string Email, string Location, string LinkedIn, string Github, string Resume)
 {

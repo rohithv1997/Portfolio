@@ -1,4 +1,4 @@
-namespace PortfolioV2.Models;
+namespace Portfolio.Models;
 
 public record EducationDetail(string School, string Timeframe, string Title, string Category, string Score);
 

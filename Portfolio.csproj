@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <PropertyGroup>
-        <StaticWebAssetBasePath>PortfolioV2</StaticWebAssetBasePath>
+        <StaticWebAssetBasePath>Portfolio</StaticWebAssetBasePath>
     </PropertyGroup>
 
 
