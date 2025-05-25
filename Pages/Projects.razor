@@ -1,0 +1,30 @@
+@page "/projects"
+@using PortfolioV2.Models
+
+<PageTitle>Projects</PageTitle>
+
+<LoadDataComponent T="ProjectDto" FilePath="data/projects.json">
+    <ChildContent Context="dto">
+        <MudGrid>
+            @foreach (var detail in dto.Projects)
+            {
+                <MudItem xs="12">
+                    <MudCard Outlined="true" Elevation="25">
+                        <MudCardHeader>
+                            <CardHeaderContent>
+                                <MudText Color="Color.Primary" Typo="Typo.h6">@detail.Title</MudText>
+                            </CardHeaderContent>
+                        </MudCardHeader>
+                        <MudList T="string" Dense="true" ReadOnly="true">
+                            @foreach (var lineItem in detail.Text)
+                            {
+                                <MudListItem Icon="@Icons.Material.Outlined.Circle" IconSize="Size.Small"
+                                             Text="@lineItem"></MudListItem>
+                            }
+                        </MudList>
+                    </MudCard>
+                </MudItem>
+            }
+        </MudGrid>
+    </ChildContent>
+</LoadDataComponent>

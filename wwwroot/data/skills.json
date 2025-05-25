@@ -1,0 +1,76 @@
+{
+  "skills": [
+    {
+      "title": "Spark",
+      "percentage": "70"
+    },
+    {
+      "title": "AWS developer",
+      "percentage": "70"
+    },
+    {
+      "title": "Java",
+      "percentage": "100"
+    },
+    {
+      "title": "Go",
+      "percentage": "100"
+    },
+    {
+      "title": "Docker",
+      "percentage": "80"
+    },
+    {
+      "title": "Kubernetes",
+      "percentage": "70"
+    },
+    {
+      "title": "Rust",
+      "percentage": "70"
+    },
+    {
+      "title": "React",
+      "percentage": "60"
+    },
+    {
+      "title": "React Native",
+      "percentage": "60"
+    },
+    {
+      "title": "C#",
+      "percentage": "100"
+    },
+    {
+      "title": "MongoDB",
+      "percentage": "60"
+    },
+    {
+      "title": "ExpressJS",
+      "percentage": "60"
+    },
+    {
+      "title": "Angular",
+      "percentage": "60"
+    },
+    {
+      "title": "NodeJS",
+      "percentage": "60"
+    },
+    {
+      "title": "SQL",
+      "percentage": "80"
+    },
+    {
+      "title": "Firebase",
+      "percentage": "70"
+    },
+    {
+      "title": "HTML",
+      "percentage": "70"
+    },
+    {
+      "title": "JS/JQuery",
+      "percentage": "70"
+    }
+  ]
+}

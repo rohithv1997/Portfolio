@@ -1,0 +1,35 @@
+@page "/education"
+@using PortfolioV2.Models
+
+<PageTitle>Education</PageTitle>
+
+<LoadDataComponent T="EducationDto" FilePath="data/education.json">
+    <ChildContent Context="dto">
+        <MudTimeline TimelineAlign="TimelineAlign.Start">
+            @for (var i = 0; i < dto.Schools.Length; i++)
+            {
+                var detail = dto.Schools[i];
+                var timelineAlign = i % 2 == 0 ? TimelineAlign.Default : TimelineAlign.End;
+                <MudTimelineItem Size="Size.Medium" Elevation="25" TimelineAlign="@timelineAlign">
+                    <ItemOpposite>
+                        <MudText Typo="Typo.h5" GutterBottom="true">@detail.Timeframe</MudText>
+                    </ItemOpposite>
+                    <ItemContent>
+                        <MudCard Outlined="true" Elevation="25">
+                            <MudCardContent>
+                                <MudText Typo="Typo.h5" Color="Color.Primary"
+                                         GutterBottom="true">@detail.School</MudText>
+                                <MudTabs Outlined="true" Position="Position.Left" Rounded="true" Border="true"
+                                         ApplyEffectsToContainer="true" Class="mt-8" PanelClass="pa-6">
+                                    <MudTabPanel Text=@detail.Title/>
+                                    <MudTabPanel Text=@detail.Category/>
+                                    <MudTabPanel Text=@detail.Score/>
+                                </MudTabs>
+                            </MudCardContent>
+                        </MudCard>
+                    </ItemContent>
+                </MudTimelineItem>
+            }
+        </MudTimeline>
+    </ChildContent>
+</LoadDataComponent>

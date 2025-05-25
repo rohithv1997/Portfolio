@@ -1,0 +1,31 @@
+@page "/certifications"
+@using PortfolioV2.Models
+
+<PageTitle>Certifications</PageTitle>
+
+<LoadDataComponent T="CertificationDto" FilePath="data/certifications.json">
+    <ChildContent Context="dto">
+        <MudGrid>
+            @foreach (var detail in dto.details)
+            {
+                <MudItem xs="12">
+                    <MudPaper>
+                        <MudLink Href="@detail.Link" Color="Color.Primary" Typo="Typo.h5">@detail.Title</MudLink>
+                        @if (!string.IsNullOrWhiteSpace(detail.Instructor) && !string.IsNullOrWhiteSpace(detail.Website))
+                        {
+                            <MudTabs Outlined="true" Position="Position.Left" Rounded="true" Border="true"
+                                     ApplyEffectsToContainer="true" Class="mt-8" PanelClass="pa-6">
+                                <MudTabPanel Text="Instructor">
+                                    <MudText Typo="Typo.body2">@detail.Instructor</MudText>
+                                </MudTabPanel>
+                                <MudTabPanel Text="Website">
+                                    <MudText Typo="Typo.body2">@detail.Website</MudText>
+                                </MudTabPanel>
+                            </MudTabs>
+                        }
+                    </MudPaper>
+                </MudItem>
+            }
+        </MudGrid>
+    </ChildContent>
+</LoadDataComponent>

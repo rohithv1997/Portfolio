@@ -1,0 +1,38 @@
+@page "/experience"
+@using PortfolioV2.Models
+
+<PageTitle>Experience</PageTitle>
+
+<LoadDataComponent T="ExperienceDto" FilePath="data/experience.json">
+    <ChildContent Context="dto">
+        <MudTimeline TimelineAlign="TimelineAlign.Start">
+            @for (var i = 0; i < dto.Jobs.Length; i++)
+            {
+                var detail = dto.Jobs[i];
+                var timelineAlign = i % 2 == 0 ? TimelineAlign.Default : TimelineAlign.End;
+                <MudTimelineItem Size="Size.Medium" Elevation="25" TimelineAlign="@timelineAlign">
+                    <ItemOpposite>
+                        <MudText Typo="Typo.h5" GutterBottom="true">@detail.Timeframe</MudText>
+                    </ItemOpposite>
+                    <ItemContent>
+                        <MudCard Outlined="true" Elevation="25">
+                            <MudCardContent>
+                                <MudText Typo="Typo.h5" Color="Color.Primary"
+                                         GutterBottom="true">@detail.Company</MudText>
+                                <MudText Typo="Typo.body2">@detail.Description</MudText>
+                                <MudPaper Outlined="true" Class="border-dashed pa-4">
+                                    <MudStack Row="true">
+                                        @foreach (var skill in detail.Skills)
+                                        {
+                                            <MudPaper Class="pa-3">@skill</MudPaper>
+                                        }
+                                    </MudStack>
+                                </MudPaper>
+                            </MudCardContent>
+                        </MudCard>
+                    </ItemContent>
+                </MudTimelineItem>
+            }
+        </MudTimeline>
+    </ChildContent>
+</LoadDataComponent>

@@ -1,0 +1,51 @@
+﻿@page "/"
+@using PortfolioV2.Models
+
+<PageTitle>Home</PageTitle>
+
+
+<LoadDataComponent T="HomeDto" FilePath="data/home.json">
+    <ChildContent Context="dto">
+        <MudText Typo="Typo.h6">
+            Full Stack Developer&nbsp;
+            <MudIcon Icon="@Icons.Material.Sharp.LocationCity" Style="vertical-align: middle;"/>
+            &nbsp;@dto.Location
+        </MudText>
+
+        <MudSpacer></MudSpacer>
+
+        <MudList T="string">
+            <MudElement HtmlTag="a"
+                        Class="ms-1"
+                        Style="font-weight:bold;"
+                        href="@dto.Github"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                <MudListItem Icon="@Icons.Custom.Brands.GitHub" IconSize="Size.Large"/>
+            </MudElement>
+            <MudElement HtmlTag="a"
+                        Class="ms-1"
+                        Style="font-weight:bold;"
+                        href="@dto.LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                <MudListItem Icon="@Icons.Custom.Brands.LinkedIn" IconSize="Size.Large"/>
+            </MudElement>
+            <MudElement HtmlTag="a"
+                        Class="ms-1"
+                        Style="font-weight:bold;"
+                        href="@dto.Resume"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                <MudListItem Icon="@Icons.Custom.FileFormats.FilePdf" IconSize="Size.Large"/>
+            </MudElement>
+            <MudElement HtmlTag="a"
+                        Class="ms-1"
+                        Style="font-weight:bold;"
+                        href="@dto.EmailLink"
+                        rel="noopener noreferrer">
+                <MudListItem Icon="@Icons.Custom.Brands.Gmail" IconSize="Size.Large"/>
+            </MudElement>
+        </MudList>
+    </ChildContent>
+</LoadDataComponent>

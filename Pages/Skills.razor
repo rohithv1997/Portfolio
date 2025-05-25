@@ -1,0 +1,20 @@
+@page "/skills"
+@using PortfolioV2.Models
+
+<PageTitle>Skills</PageTitle>
+
+<LoadDataComponent T="SkillDto" FilePath="data/skills.json">
+    <ChildContent Context="dto">
+        <MudStack>
+            @foreach (var detail in dto.Skills)
+            {
+                <MudPaper Class="pa-3">
+                    <MudText Typo="Typo.h5" Color="Color.Primary" GutterBottom="true">@detail.Title</MudText>
+                    <MudProgressLinear Color="Color.Secondary" Rounded="true" Size="Size.Medium"
+                                       Value=@detail.PercentageInDouble/>
+                    <MudText Typo="Typo.subtitle2">@detail.Percentage%</MudText>
+                </MudPaper>
+            }
+        </MudStack>
+    </ChildContent>
+</LoadDataComponent>
