@@ -2,7 +2,7 @@ name: Deploy Blazor WASM to GitHub Pages
 
 on:
   push:
-    branches: [ master ]  # or your default branch
+    branches: [ main ]  # or your default branch
 
 permissions:
   contents: write
