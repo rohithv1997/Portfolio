@@ -27,7 +27,7 @@ jobs:
         run: |
           set -e
           mkdir temp-gh-pages
-          cp -r publish/wwwroot/PortfolioV2/* temp-gh-pages/
+          cp -r publish/wwwroot/Portfolio/* temp-gh-pages/
           cd temp-gh-pages
           touch .nojekyll
           git init
