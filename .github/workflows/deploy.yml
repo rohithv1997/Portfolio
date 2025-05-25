@@ -21,7 +21,7 @@ jobs:
           dotnet-version: '9.0.x'  # or your actual version
 
       - name: Publish Blazor WebAssembly app
-        run: dotnet publish -c Release -o publish -p:StaticWebAssetBasePath=PortfolioV2
+        run: dotnet publish -c Release -o publish -p:StaticWebAssetBasePath=Portfolio
 
       - name: Deploy to gh-pages
         run: |
