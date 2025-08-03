@@ -8,3 +8,8 @@
 - `Portfolio` is the base path embedded in `wwwroot/index.html`. This has to be changed when github's remote
   repository name changes. this is required to ensure this site is hosted using github pages at
   `xxxxx.github.io/repository-name`
+
+### package update
+- To update outdated packages, run in sequence
+- `dotnet list package --outdated` to identify outdated packages
+- For each package, run `dotnet add package <Package>`
