@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "title": "Alexa Audio Insights Platform",
+      "text": [
+        "Designed and developed a scalable data processing platform to process Alexa audio data for generating proactive customer insights",
+        "Implemented data ingestion pipelines which ingest 5.5 billion audio playback events using AWS SQS, AWS Event Bridge and AWS Lambda and store in AWS Opensearch",
+        "Implemented Query mechanism in AWS Opensearch to ensure TM95 is 50ms for 130TB data per month"
+      ]
+    },
+    {
       "title": "End-to-end design and implementation for cloud cost allocator",
       "text": [
         "FinHub Tier-1 solution will eliminate developer efforts required to customize the solution for each customer based on their requirements.",
