@@ -111,6 +111,18 @@
       "link": "https://www.udemy.com/certificate/UC-ee4db616-a84b-4817-8c3f-260b3c7e8f66/",
       "instructor": "Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer",
       "website": "Udemy"
+    },
+	{
+      "title": "Ultimate AWS Certified AI Practitioner AIF-C01",
+      "link": "https://www.udemy.com/certificate/UC-e5b22037-e836-460e-b387-f6b9ccd92962/",
+      "instructor": "Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer",
+      "website": "Udemy"
+    },
+	{
+      "title": "Ultimate AWS Certified Generative AI Developer Professional",
+      "link": "https://www.udemy.com/certificate/UC-816e9617-9c62-45e2-9d31-e5ca1d98d784/",
+      "instructor": "Sundog Education by Frank Kane, Stephane Maarek | AWS Certified Cloud Practitioner,Solutions Architect,Developer",
+      "website": "Udemy"
     }
   ]
 }
