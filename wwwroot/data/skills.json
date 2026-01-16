@@ -1,7 +1,11 @@
 {
   "skills": [
     {
-      "title": "Spark",
+      "title": "Generative AI",
+      "percentage": "80"
+    },
+    {
+      "title": "Apache Spark",
       "percentage": "70"
     },
     {
