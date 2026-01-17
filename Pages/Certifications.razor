@@ -1,6 +1,14 @@
 @page "/certifications"
 @using Portfolio.Models
 
+@code {
+    private bool _expanded = false;
+    private void OnExpandCollapseClick()
+    {
+        _expanded = !_expanded;
+    }
+}
+
 <PageTitle>Certifications</PageTitle>
 
 <LoadDataComponent T="CertificationDto" FilePath="data/certifications.json">
@@ -10,18 +18,36 @@
             {
                 <MudItem xs="12">
                     <MudPaper>
-                        <MudLink Href="@detail.Link" Color="Color.Primary" Typo="Typo.h5">@detail.Title</MudLink>
-                        @if (!string.IsNullOrWhiteSpace(detail.Instructor) && !string.IsNullOrWhiteSpace(detail.Website))
+                        @if (detail.Category == Category.Certification)
                         {
-                            <MudTabs Outlined="true" Position="Position.Left" Rounded="true" Border="true"
-                                     ApplyEffectsToContainer="true" Class="mt-8" PanelClass="pa-6">
-                                <MudTabPanel Text="Instructor">
-                                    <MudText Typo="Typo.body2">@detail.Instructor</MudText>
-                                </MudTabPanel>
-                                <MudTabPanel Text="Website">
-                                    <MudText Typo="Typo.body2">@detail.Website</MudText>
-                                </MudTabPanel>
-                            </MudTabs>
+                            <MudLink Href="@detail.Link" Color="Color.Primary" Typo="Typo.h5">@detail.Title</MudLink>
+                        }
+                        @if (detail.Category == Category.Course)
+                        {
+                            <MudStack Spacing="2">
+                                <MudButton OnClick="OnExpandCollapseClick" 
+                                           Variant="Variant.Text"
+                                           Color="Color.Secondary" 
+                                           FullWidth="true"
+                                           Class="justify-start px-4">
+                                    <MudText Typo="Typo.body1">@detail.Title</MudText>
+                                </MudButton>
+                                <MudDivider/>
+                                <MudCollapse Expanded="_expanded">
+                                    <MudTabs Outlined="true" Position="Position.Left" Rounded="true" Border="true"
+                                             ApplyEffectsToContainer="true" Class="mt-8" PanelClass="pa-6">
+                                        <MudTabPanel Text="Link">
+                                            <MudLink Href="@detail.Link" Color="Color.Info" Typo="Typo.body2">@detail.Link</MudLink>
+                                        </MudTabPanel>
+                                        <MudTabPanel Text="Instructor">
+                                            <MudText Typo="Typo.body2">@detail.Instructor</MudText>
+                                        </MudTabPanel>
+                                        <MudTabPanel Text="Website">
+                                            <MudText Typo="Typo.body2">@detail.Website</MudText>
+                                        </MudTabPanel>
+                                    </MudTabs>
+                                </MudCollapse>
+                            </MudStack>
                         }
                     </MudPaper>
                 </MudItem>

@@ -13,3 +13,4 @@
 - To update outdated packages, run in sequence
 - `dotnet list package --outdated` to identify outdated packages
 - For each package, run `dotnet add package <Package>`
+- If `dotnet serve` does not work, run `dotnet tool install --global dotnet-serve`
