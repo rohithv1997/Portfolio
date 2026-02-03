@@ -1,0 +1,43 @@
+{
+  "jobs": [
+    {
+      "company": "Amazon Inc.",
+      "timeframe": "November 2022 - Present",
+      "description": "Delivery Consultant at AWS Professional Services",
+      "skills": [
+        "Java",
+        "Apache Spark",
+        "AWS"
+      ]
+    },
+    {
+      "company": "Thought Works Inc.",
+      "timeframe": "May 2021 - November 2022",
+      "description": "Application Developer in Platform Core team for a leading private sector Bank",
+      "skills": [
+        "Go",
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "Kafka",
+        "React Native",
+        "SQL",
+        "CSS",
+        "HTML"
+      ]
+    },
+    {
+      "company": "Odessa Technologies Inc.",
+      "timeframe": "May 2018 - May 2021",
+      "description": "Senior Software Engineer in R&D team",
+      "skills": [
+        "C#",
+        "SQL",
+        "Angular",
+        "jQuery",
+        "CSS",
+        "HTML"
+      ]
+    }
+  ]
+}
