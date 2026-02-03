@@ -20,7 +20,7 @@
                     <MudPaper>
                         @if (detail.Category == Category.Certification)
                         {
-                            <MudLink Href="@detail.Link" Color="Color.Primary" Typo="Typo.h5">@detail.Title</MudLink>
+                            <MudLink Href="@detail.Link" Color="Color.Primary" Typo="Typo.h5" Target="_blank">@detail.Title</MudLink>
                         }
                         @if (detail.Category == Category.Course)
                         {
