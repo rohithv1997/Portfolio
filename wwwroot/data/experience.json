@@ -1,8 +1,21 @@
 {
   "jobs": [
     {
+      "company": "IDFC First Bank Limited",
+      "timeframe": "March 2026 - Present",
+      "description": "Senior Developer at IDFC First Bank",
+      "skills": [
+        "Java",
+        "Go",
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "Kafka"
+      ]
+    },
+    {
       "company": "Amazon Inc.",
-      "timeframe": "November 2022 - Present",
+      "timeframe": "November 2022 - February 2026",
       "description": "Delivery Consultant at AWS Professional Services",
       "skills": [
         "Java",
