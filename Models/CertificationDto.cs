@@ -8,12 +8,7 @@ public enum Category
     Course
 }
 
-public record CertificationDetail(string Title, string Link, string Instructor, string Website)
-{
-    public Category Category => !string.IsNullOrWhiteSpace(Instructor) && !string.IsNullOrWhiteSpace(Website)
-        ? Category.Course
-        : Category.Certification;
-}
+public record CertificationDetail(string Title, string Link, string Instructor, string Website);
 
 public record CertificationDto(CertificationDetail[] Exams, CertificationDetail[] Courses)
 {

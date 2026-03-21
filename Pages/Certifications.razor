@@ -1,67 +1,38 @@
 @page "/certifications"
 @using Portfolio.Models
 
-@code {
-    private readonly HashSet<int> _expanded = [];
-
-    private void OnExpandCollapseClick(int index)
-    {
-        if (!_expanded.Add(index))
-        {
-            _expanded.Remove(index);
-        }
-    }
-
-}
-
 <PageTitle>Certifications</PageTitle>
 
 <LoadDataComponent T="CertificationDto" FilePath="data/certifications.json">
     <ChildContent Context="dto">
         <MudGrid>
-            @foreach (var detail in dto.details)
+            @foreach (var detail in dto.Exams)
             {
                 <MudItem xs="12">
-                    <MudPaper>
-                        @if (detail.Category == Category.Certification)
-                        {
-                            <MudLink Href="@detail.Link" Color="Color.Primary" Typo="Typo.h5"
-                                     Target="_blank">@detail.Title</MudLink>
-                        }
-                        @if (detail.Category == Category.Course)
-                        {
-                            <MudStack Spacing="2">
-                                <MudButton OnClick="@(() => OnExpandCollapseClick(detail.GetHashCode()))"
-                                           Variant="Variant.Text"
-                                           Color="Color.Secondary"
-                                           FullWidth="true"
-                                           Class="justify-start px-4">
-                                    <MudText Typo="Typo.body1">@detail.Title</MudText>
-                                </MudButton>
-                                <MudDivider/>
-                                <MudCollapse Expanded="_expanded.Contains(detail.GetHashCode())">
-                                    <MudTabs Outlined="true" Rounded="true" Border="true" Position="Position.Left"
-                                             ApplyEffectsToContainer="true" Class="mt-8">
-                                        <MudTabPanel Text="Link"
-                                                     Style="display:flex; align-items:center; justify-content:center; padding:24px;">
-                                            <MudLink Href="@detail.Link" Color="Color.Info"
-                                                     Target="_blank">@detail.Link</MudLink>
-                                        </MudTabPanel>
-                                        <MudTabPanel Text="Instructor"
-                                                     Style="display:flex; align-items:center; justify-content:center; padding:24px;">
-                                            <MudText>@detail.Instructor</MudText>
-                                        </MudTabPanel>
-                                        <MudTabPanel Text="Website"
-                                                     Style="display:flex; align-items:center; justify-content:center; padding:24px;">
-                                            <MudText>@detail.Website</MudText>
-                                        </MudTabPanel>
-                                    </MudTabs>
-                                </MudCollapse>
-                            </MudStack>
-                        }
+                    <MudPaper Class="pa-4">
+                        <MudLink Href="@detail.Link" Color="Color.Primary" Typo="Typo.h5"
+                                 Target="_blank">@detail.Title</MudLink>
                     </MudPaper>
                 </MudItem>
             }
         </MudGrid>
+        <MudDivider Class="my-4"/>
+        <MudTable FixedHeader="true" Items="@dto.Courses" Height="400px" Hover="true">
+            <HeaderContent>
+                <MudTh Style="width:50%">Course</MudTh>
+                <MudTh Style="width:25%">Instructor</MudTh>
+                <MudTh Style="width:25%">Website</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Course" Style="white-space:normal; word-break:break-word;">
+                    <MudLink Href="@context.Link" Color="Color.Info" Target="_blank">@context.Title</MudLink>
+                </MudTd>
+                <MudTd DataLabel="Instructor" Style="white-space:normal; word-break:break-word;">@context.Instructor</MudTd>
+                <MudTd DataLabel="Website" Style="white-space:normal; word-break:break-word;">@context.Website</MudTd>
+            </RowTemplate>
+            <PagerContent>
+                <MudTablePager/>
+            </PagerContent>
+        </MudTable>
     </ChildContent>
 </LoadDataComponent>
