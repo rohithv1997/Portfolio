@@ -10,6 +10,7 @@
   `xxxxx.github.io/repository-name`
 
 ### package update
+
 - To update outdated packages, run in sequence
 - `dotnet list package --outdated` to identify outdated packages
 - For each package, run `dotnet add package <Package>`

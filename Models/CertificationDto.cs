@@ -1,12 +1,10 @@
-using System.Linq;
-
 namespace Portfolio.Models;
 
 public enum Category
 {
     Certification,
     Course
-};
+}
 
 public record CertificationDetail(string Title, string Link, string Instructor, string Website)
 {

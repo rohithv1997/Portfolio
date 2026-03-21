@@ -1,7 +1,53 @@
 ﻿@using Portfolio.Pages
-<Router AppAssembly="@typeof(App).Assembly" NotFoundPage="@typeof(NotFound)">
-    <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>
-        <FocusOnNavigate RouteData="@routeData" Selector="h1"/>
-    </Found>
-</Router>
+<MudThemeProvider IsDarkMode="true"/>
+<MudPopoverProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start"
+                       OnClick="@(e => DrawerToggle())"/>
+        <MudText Typo="Typo.h5" Class="ml-3">Rohith's Portfolio</MudText>
+        <MudSpacer/>
+    </MudAppBar>
+    <MudDrawer @bind-Open="@_drawerOpen" Elevation="2" ClipMode="DrawerClipMode.Always">
+        <MudNavLink OnClick="@(() => _currentPage = typeof(Home))" Match="NavLinkMatch.All"
+                    Icon="@Icons.Material.Filled.Home">Home
+        </MudNavLink>
+        <MudNavLink OnClick="@(() => _currentPage = typeof(Experience))" Match="NavLinkMatch.All"
+                    Icon="@Icons.Material.Filled.WorkHistory">Experience
+        </MudNavLink>
+        <MudNavLink OnClick="@(() => _currentPage = typeof(Projects))" Match="NavLinkMatch.All"
+                    Icon="@Icons.Material.Filled.Laptop">Projects
+        </MudNavLink>
+        <MudNavLink OnClick="@(() => _currentPage = typeof(Skills))" Match="NavLinkMatch.All"
+                    Icon="@Icons.Material.Filled.ScreenSearchDesktop">Skills
+        </MudNavLink>
+        <MudNavLink OnClick="@(() => _currentPage = typeof(Certifications))" Match="NavLinkMatch.All"
+                    Icon="@Icons.Custom.FileFormats.FileDocument">Certifications
+        </MudNavLink>
+        <MudNavLink OnClick="@(() => _currentPage = typeof(Education))" Match="NavLinkMatch.All"
+                    Icon="@Icons.Material.Filled.School">Education
+        </MudNavLink>
+    </MudDrawer>
+    <MudMainContent>
+        <DynamicComponent Type="_currentPage"/>
+    </MudMainContent>
+</MudLayout>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
+
+@code {
+    bool _drawerOpen = true;
+    private Type _currentPage = typeof(Home);
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+}

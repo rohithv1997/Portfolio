@@ -11,6 +11,7 @@
             _expanded.Remove(index);
         }
     }
+
 }
 
 <PageTitle>Certifications</PageTitle>
@@ -18,19 +19,19 @@
 <LoadDataComponent T="CertificationDto" FilePath="data/certifications.json">
     <ChildContent Context="dto">
         <MudGrid>
-            @for (var i = 0; i < dto.details.Length; i++)
+            @foreach (var detail in dto.details)
             {
-                var detail = dto.details[i];
                 <MudItem xs="12">
                     <MudPaper>
                         @if (detail.Category == Category.Certification)
                         {
-                            <MudLink Href="@detail.Link" Color="Color.Primary" Typo="Typo.h5" Target="_blank">@detail.Title</MudLink>
+                            <MudLink Href="@detail.Link" Color="Color.Primary" Typo="Typo.h5"
+                                     Target="_blank">@detail.Title</MudLink>
                         }
                         @if (detail.Category == Category.Course)
                         {
                             <MudStack Spacing="2">
-                                <MudButton OnClick="@(() => OnExpandCollapseClick(i))"
+                                <MudButton OnClick="@(() => OnExpandCollapseClick(detail.GetHashCode()))"
                                            Variant="Variant.Text"
                                            Color="Color.Secondary"
                                            FullWidth="true"
@@ -38,23 +39,21 @@
                                     <MudText Typo="Typo.body1">@detail.Title</MudText>
                                 </MudButton>
                                 <MudDivider/>
-                                <MudCollapse Expanded="_expanded.Contains(i)">
-                                    <MudTabs Outlined="true" Position="Position.Left" Rounded="true" Border="true"
-                                             ApplyEffectsToContainer="true" Class="mt-8" PanelClass="pa-6">
-                                        <MudTabPanel Text="Link">
-                                            <MudStack AlignItems="AlignItems.Center" Justify="Justify.Center" Class="fill-height">
-                                                <MudLink Href="@detail.Link" Color="Color.Info" Typo="Typo.body2">@detail.Link</MudLink>
-                                            </MudStack>
+                                <MudCollapse Expanded="_expanded.Contains(detail.GetHashCode())">
+                                    <MudTabs Outlined="true" Rounded="true" Border="true" Position="Position.Left"
+                                             ApplyEffectsToContainer="true" Class="mt-8">
+                                        <MudTabPanel Text="Link"
+                                                     Style="display:flex; align-items:center; justify-content:center; padding:24px;">
+                                            <MudLink Href="@detail.Link" Color="Color.Info"
+                                                     Target="_blank">@detail.Link</MudLink>
                                         </MudTabPanel>
-                                        <MudTabPanel Text="Instructor">
-                                            <MudStack AlignItems="AlignItems.Center" Justify="Justify.Center" Class="fill-height">
-                                                <MudText Typo="Typo.body2">@detail.Instructor</MudText>
-                                            </MudStack>
+                                        <MudTabPanel Text="Instructor"
+                                                     Style="display:flex; align-items:center; justify-content:center; padding:24px;">
+                                            <MudText>@detail.Instructor</MudText>
                                         </MudTabPanel>
-                                        <MudTabPanel Text="Website">
-                                            <MudStack AlignItems="AlignItems.Center" Justify="Justify.Center" Class="fill-height">
-                                                <MudText Typo="Typo.body2">@detail.Website</MudText>
-                                            </MudStack>
+                                        <MudTabPanel Text="Website"
+                                                     Style="display:flex; align-items:center; justify-content:center; padding:24px;">
+                                            <MudText>@detail.Website</MudText>
                                         </MudTabPanel>
                                     </MudTabs>
                                 </MudCollapse>
