@@ -9,10 +9,11 @@
             @for (var i = 0; i < dto.Jobs.Length; i++)
             {
                 var detail = dto.Jobs[i];
+                var color = i == 0 ? Color.Secondary : Color.Default;
                 var timelineAlign = i % 2 == 0 ? TimelineAlign.Default : TimelineAlign.End;
-                <MudTimelineItem Size="Size.Medium" Elevation="25" TimelineAlign="@timelineAlign">
+                <MudTimelineItem Size="Size.Medium" Elevation="25" TimelineAlign="@timelineAlign" Color="@color">
                     <ItemOpposite>
-                        <MudText Typo="Typo.h5" GutterBottom="true">@detail.Timeframe</MudText>
+                        <MudText Typo="Typo.h5" GutterBottom="true" Color="@color">@detail.Timeframe</MudText>
                     </ItemOpposite>
                     <ItemContent>
                         <MudCard Outlined="true" Elevation="25">
