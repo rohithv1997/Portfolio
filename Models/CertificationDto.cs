@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace Portfolio.Models;
 
 public enum Category
