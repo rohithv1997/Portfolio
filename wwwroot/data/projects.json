@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "title": "LLM-Powered Campaign Calling Platform",
+      "text": [
+        "Building the telephony layer of an in-house LLM-driven outbound campaign calling platform, handling outbound dialing and inbound/outbound call recording via Cisco JTAPI and CUCM listeners",
+        "Engineered the platform to reliably support 200 concurrent calls per second while sustaining an average throughput of 500,000+ events daily",
+        "Developed CUCM event listeners to capture real-time call state and recording data, enabling downstream LLM-based campaign automation"
+      ]
+    },
+    {
       "title": "Alexa Audio Insights Platform",
       "text": [
         "Designed and developed a scalable data processing platform to process Alexa audio data for generating proactive customer insights",

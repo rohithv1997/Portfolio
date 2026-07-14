@@ -1,6 +1,10 @@
 {
   "skills": [
     {
+      "title": "Cisco JTAPI / CUCM",
+      "percentage": "75"
+    },
+    {
       "title": "Generative AI",
       "percentage": "80"
     },
